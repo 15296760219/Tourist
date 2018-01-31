@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.silent.fiveghost.tourist.MainActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:layout_marginTop="40px"
+            layout="@layout/home_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="120px"></include>
+
+        <com.stx.xhb.xbanner.XBanner
+            android:id="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:AutoPlayTime="3000"
+            app:isAutoPlay="true"
+            app:isShowIndicatorOnlyOne="true"
+            app:isShowNumberIndicator="true"
+            app:pageChangeDuration="1000"
+            app:pointContainerLeftRightPadding="10dp"
+            app:pointContainerPosition="BOTTOM"
+            app:pointNormal="@drawable/shape_indicator_normal"
+            app:pointSelect="@drawable/shape_indicator_checked"
+            app:pointsPosition="CENTER"
+            app:pointsVisibility="true"
+            app:tipTextSize="12sp" />
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:padding="15px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_Zhoubian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_zhoubain" />
+
+                <TextView
+                    android:id="@+id/text_Zhoubian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周边游"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:padding="15px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iamge_Rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_rili"/>
+
+                <TextView
+                    android:id="@+id/text_Rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周边游"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:padding="15px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_Zhinan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_zhinan"/>
+
+                <TextView
+                    android:id="@+id/text_Zhinan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周边游"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:padding="15px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_Dingwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_dingwei"/>
+
+                <TextView
+                    android:id="@+id/text_Dingwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周边游"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:padding="15px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_Zutuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_zutuan"/>
+
+                <TextView
+                    android:id="@+id/text_Zutuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周边游"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/home_Popular"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45px">
+            <TextView
+                android:id="@+id/text_Popular"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/common_text_black"
+                android:textSize="15sp"
+                android:text="| 热门路线"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/image_Popular"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_rightarrow"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_Routes_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/home_Guidestyle"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45px">
+            <TextView
+                android:id="@+id/text_Guidestyle"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/common_text_black"
+                android:textSize="15sp"
+                android:text="| 导游风采"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/image_Guidestyle"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_rightarrow"
+                android:layout_width="15px"
+                android:layout_height="15px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ListView
+            android:id="@+id/list_Guidestyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</ScrollView>

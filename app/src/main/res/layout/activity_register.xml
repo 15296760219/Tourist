@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg2x"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <ImageView
+            android:id="@+id/im_register_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back_normal2x" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="新用户注册"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/im_register_more"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_more2x" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="100%"
+
+        ></View>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="请输入手机号"
+        android:textColor="#1AEFC3"
+        android:textSize="16sp"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="100%" />
+
+    <EditText
+        android:id="@+id/ed_register_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_insert2x"
+        android:gravity="center"
+        android:textColor="#fff"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="80%" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="2%"
+        app:layout_widthPercent="100%"
+
+        ></View>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="请输入验证码"
+        android:textColor="#1AEFC3"
+        android:textSize="16sp"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="100%" />
+
+    <EditText
+        android:id="@+id/ed_verificationCode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_insert2x"
+        android:gravity="center"
+        android:textColor="#fff"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="80%" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="2%"
+        app:layout_widthPercent="100%"
+
+        ></View>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="请输入6位密码"
+        android:textColor="#1AEFC3"
+        android:textSize="16sp"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="100%" />
+
+    <EditText
+        android:id="@+id/ed_register_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_insert2x"
+        android:gravity="center"
+        android:textColor="#fff"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="80%" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="2%"
+        app:layout_widthPercent="100%"
+
+        ></View>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="请再次确定密码"
+        android:textColor="#1AEFC3"
+        android:textSize="16sp"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="100%" />
+
+    <EditText
+
+        android:id="@+id/ed_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_insert2x"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="#fff"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="80%" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="16%"
+        app:layout_widthPercent="75%"
+
+
+        ></View>
+
+    <Button
+        android:id="@+id/get_verificationCode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#1AEFC3"
+        android:text="获取验证码"
+        android:textSize="20sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="80%" />
+
+
+    <TextView
+        android:id="@+id/tv_arggreeAgreement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="注册即代表已阅读并同意用户服务协议"
+        android:textColor="#fff"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="80%" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="1%"
+        app:layout_widthPercent="80%">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#132cbc" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="80%"
+
+
+        ></View>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

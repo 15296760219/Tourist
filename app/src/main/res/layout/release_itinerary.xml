@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.zhy.autolayout.AutoLinearLayout
+    android:background="#f555"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="176px">
+    <TextView
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="300px"
+        android:text="发布是行程"
+        android:textColor="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="35px" />
+
+</com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:weightSum="2"
+        android:background="#f000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140px">
+     <TextView
+         android:layout_marginTop="48px"
+         android:layout_marginLeft="107px"
+         android:textColor="#ffff"
+         android:text="一站式发布"
+         android:layout_width="wrap_content"
+         android:layout_height="30px" />
+        <TextView
+            android:layout_marginTop="48px"
+            android:layout_marginLeft="250px"
+            android:textColor="#ffff"
+            android:text="一站式发布"
+            android:layout_width="wrap_content"
+            android:layout_height="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+  <com.zhy.autolayout.AutoLinearLayout
+      android:background="#ff2050"
+      android:layout_marginLeft="38px"
+      android:layout_marginTop="60px"
+      android:layout_width="630px"
+      android:layout_height="105px">
+     <TextView
+         android:layout_marginTop="36px"
+         android:layout_marginLeft="38px"
+         android:text="出发城市"
+         android:layout_width="wrap_content"
+         android:layout_height="35px" />
+
+  </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="#f20201"
+        android:layout_marginLeft="38px"
+        android:layout_marginTop="29px"
+        android:layout_width="630px"
+        android:layout_height="105px">
+        <TextView
+            android:layout_marginTop="36px"
+            android:layout_marginLeft="38px"
+            android:text="游玩城市"
+            android:layout_width="wrap_content"
+            android:layout_height="35px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+   <com.zhy.autolayout.AutoLinearLayout
+       android:gravity="center"
+       android:layout_marginTop="500px"
+       android:background="#f252"
+       android:layout_width="match_parent"
+       android:layout_height="131px">
+
+       <Button
+           android:text="确认路程"
+           android:background="#f252"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+
+   </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

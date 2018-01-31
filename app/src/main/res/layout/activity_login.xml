@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login2x"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="740px"
+       android:gravity="center_horizontal"
+        android:layout_width="538px"
+        android:layout_height="50px"
+        android:layout_gravity="center_horizontal"
+        android:background="#33ffffff"
+       >
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#991D1D1D"
+            android:drawableLeft="@drawable/icon_user2x"
+            android:hint="  用户名/手机号/邮箱"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="12sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="25px"
+        android:layout_width="528px"
+        android:layout_height="50px"
+        android:layout_gravity="center_horizontal"
+        android:background="#33ffffff"
+       >
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#991D1D1D"
+            android:drawableLeft="@drawable/icon_lock2x"
+            android:hint="   6位数字或字母"
+            android:textColor="#fff"
+            android:textColorHint="#FFF"
+            android:textSize="12sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    <Button
+        android:layout_marginTop="46px"
+        android:id="@+id/bu_login"
+        android:layout_width="538px"
+        android:layout_height="50px"
+        android:layout_gravity="center"
+        android:background="#1AEFC3"
+        android:text="登录" />
+
+
+
+
+
+      <com.zhy.autolayout.AutoRelativeLayout
+          android:layout_marginTop="143px"
+           android:layout_width="538px"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_horizontal"
+
+
+          >
+
+          <TextView
+              android:id="@+id/tv_forgrt_password"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:text="忘记密码？"
+              android:textColor="#fff" />
+
+          <TextView
+              android:id="@+id/tv_register"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="@string/hello"
+              android:textColor="#fff" />
+
+      </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

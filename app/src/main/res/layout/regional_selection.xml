@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+     android:background="#f222"
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+        <TextView
+android:layout_gravity="center_vertical"
+          android:layout_marginLeft="350px"
+            android:textColor="#ffff"
+            android:text="地区选择"
+            android:layout_width="wrap_content"
+            android:layout_height="32px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+   <TextView
+       android:text="地点检索"
+       android:layout_marginLeft="90px"
+       android:layout_marginTop="50px"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+  <EditText
+      android:drawableRight="@mipmap/ic_launcher"
+      android:layout_marginTop="90px"
+      android:layout_marginLeft="110px"
+      android:layout_width="575px"
+      android:layout_height="55px" />
+
+    <ImageView
+        android:layout_marginLeft="90px"
+        android:background="@drawable/ooo"
+        android:layout_marginTop="85px"
+        android:layout_width="201px"
+        android:layout_height="70px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="70px">
+      <ImageView
+          android:layout_marginLeft="90px"
+          android:src="@drawable/ooo"
+          android:layout_width="201px"
+          android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginLeft="30px"
+            android:src="@drawable/ooo"
+            android:layout_width="201px"
+            android:layout_height="match_parent" />
+    </com.zhy.autolayout.AutoLinearLayout>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <Button
+         android:layout_alignParentBottom="true"
+         android:background="#FF20"
+         android:text="确定"
+         android:gravity="center"
+         android:layout_marginTop="595px"
+         android:layout_width="match_parent"
+         android:layout_height="130px" />
+ </RelativeLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>
