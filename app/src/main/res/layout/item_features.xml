@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhy.autolayout.AutoLinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal"
-             >
+    android:layout_width="match_parent"
+    android:layout_height="280px"
+    android:orientation="horizontal"
+    android:paddingBottom="30px"
+    android:paddingLeft="40px"
+    android:paddingRight="64px"
+    android:paddingTop="30px">
 
     <com.zhy.autolayout.AutoRelativeLayout
-        android:layout_marginTop="35px"
-
-        android:layout_width="291px"
-        android:layout_height="282px"
-      >
+        android:layout_width="215px"
+        android:layout_height="215px">
 
         <ImageView
-
-            android:layout_marginLeft="44px"
             android:id="@+id/img_item_features"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,11 +21,11 @@
             android:src="@mipmap/main_pic_bg"/>
 
         <CheckBox
-            android:layout_marginTop="12px"
             android:id="@+id/like_item_features"
-            android:layout_width="36px"
-            android:layout_height="36px"
-          android:layout_marginLeft="210px"
+            android:layout_width="41px"
+            android:layout_height="41px"
+            android:layout_marginLeft="163px"
+            android:layout_marginTop="12px"
             android:background="@drawable/love_btn2"
             android:button="@null"/>
     </com.zhy.autolayout.AutoRelativeLayout>
@@ -35,35 +33,31 @@
 
     <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="282px"
+        android:layout_height="215px"
         android:orientation="vertical"
-        android:paddingLeft="32px">
+        android:paddingLeft="30px">
 
-        <com.zhy.autolayout.AutoLinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_marginTop="47px"
-                android:id="@+id/title_item_features"
-                style="@style/item_features_big"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="桂林—凤凰古城2日游"/>
+        <TextView
+            android:id="@+id/title_item_features"
+            style="@style/item_features_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="桂林—凤凰古城2日游"/>
 
-            <TextView
-                android:layout_marginLeft="18px"
-                android:layout_height="25px"
-                android:layout_width="25px"
-               android:layout_marginTop="20px"
-                android:id="@+id/new_item_features"
-                android:layout_gravity="center"
-                android:background="@drawable/news_circle"
-                android:gravity="center"
-                android:text="新"
-                android:textColor="#fff"/>
-        </com.zhy.autolayout.AutoLinearLayout>
-
+        <TextView
+            android:id="@+id/new_item_features"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="8px"
+            android:layout_toRightOf="@id/title_item_features"
+            android:background="@drawable/news_circle"
+            android:gravity="center"
+            android:text="新"
+            android:textColor="#fff"/>
 
         <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="match_parent"
@@ -73,66 +67,66 @@
 
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="15px"
-                        android:layout_height="15px"
+                        android:layout_width="12px"
+                        android:layout_height="12px"
                         android:layout_gravity="center"
                         android:src="@drawable/grey_circle"/>
 
                     <TextView
-                        android:layout_marginLeft="32px"
                         android:id="@+id/one_item_features"
                         style="@style/item_features_small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="关键字1"/>
+                        android:layout_marginLeft="10px"
+                        android:text="关键词1"/>
 
                 </com.zhy.autolayout.AutoLinearLayout>
 
                 <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="15px"
-                        android:layout_height="15px"
+                        android:layout_width="12px"
+                        android:layout_height="12px"
                         android:layout_gravity="center"
                         android:src="@drawable/grey_circle"/>
 
                     <TextView
-                        android:layout_marginLeft="32px"
                         android:id="@+id/two_item_features"
                         style="@style/item_features_small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
                         android:text="关键字2"/>
 
                 </com.zhy.autolayout.AutoLinearLayout>
             </com.zhy.autolayout.AutoLinearLayout>
 
             <com.zhy.autolayout.AutoLinearLayout
-                android:layout_marginTop="24px"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px">
 
                 <ImageView
-                    android:layout_width="15px"
-                    android:layout_height="15px"
+                    android:layout_width="12px"
+                    android:layout_height="12px"
                     android:layout_gravity="center"
                     android:src="@drawable/grey_circle"/>
 
                 <TextView
                     android:id="@+id/three_item_features"
                     style="@style/item_features_small"
+                    android:layout_marginLeft="10px"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="关键字3************"/>
@@ -142,11 +136,11 @@
 
 
         <com.zhy.autolayout.AutoLinearLayout
-            android:layout_marginTop="24px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentBottom="true">
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="34px"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/price_item_features"
@@ -159,6 +153,7 @@
                 android:id="@+id/payment_item_features"
                 style="@style/item_features_small"
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="13px"
                 android:layout_height="wrap_content"
                 android:text="3人付款 . "/>
 

@@ -2,6 +2,10 @@ package com.silent.fiveghos.tourist.ui.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Toast;
 
 import com.silent.fiveghos.tourist.R;
 import com.silent.fiveghos.tourist.app.base.BaseFragment;
@@ -16,6 +20,9 @@ import com.silent.fiveghos.tourist.ui.activity.HomeActivity;
  */
 @SuppressLint("ValidFragment")
 public class OrderFragment extends BaseFragment {
+
+    private CardView mCard;
+
     public OrderFragment(HomeActivity homeActivity) {
 
     }
@@ -27,12 +34,17 @@ public class OrderFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-
+        mCard = findViewById(R.id.card);
     }
 
     @Override
     protected void setListener() {
+        mCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
     }
 
     @Override
