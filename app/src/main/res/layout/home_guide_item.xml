@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
+        android:layout_height="wrap_content"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:background="@drawable/selector_tourguidestyle">
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
+                android:layout_marginTop="41px"
                 android:id="@+id/img_item_home"
                 android:layout_width="0dp"
+                android:layout_marginLeft="30px"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@mipmap/main_pic_bg"/>
@@ -36,6 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="导游A"
+                    android:layout_marginTop="51px"
                     android:textColor="#000"
                     android:textSize="15dp"/>
 
@@ -43,8 +43,7 @@
                     android:id="@+id/route_home"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:ellipsize="end"
+                    android:layout_marginTop="101px"
                     android:maxEms="20"
                     android:text="擅长路线：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
 
@@ -57,8 +56,6 @@
                     app:starCount="5"
                     app:starEmpty="@drawable/pic_star_grey2x"
                     app:starFill="@drawable/pic_star_yellow2x"
-                    app:starImageSize="20dp"
-                    app:starPadding="15dp"
                     app:starStep="1"
                     app:stepSize="Full"/>
 
