@@ -4,10 +4,36 @@
                                      android:layout_height="match_parent"
                                      android:orientation="vertical">
 
-    <include
-        layout="@layout/features_searchbar_black"
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/li"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="175px"
+        android:background="#132434"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="595px"
+            android:layout_height="50px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="85px"
+            android:background="@drawable/shape"
+            android:backgroundTint="#fff"
+            android:paddingLeft="30px"
+            android:drawableLeft="@mipmap/sb"
+            android:drawablePadding="10px"
+            android:gravity="center|left"
+            android:hint="搜索"/>
+
+        <ImageView
+            android:id="@+id/mi"
+            android:layout_width="34px"
+            android:layout_height="28px"
+            android:layout_marginLeft="34px"
+            android:layout_marginRight="33px"
+            android:layout_marginTop="95px"
+            android:background="@color/color_white"
+            android:src="@mipmap/ef"/>
+    </com.zhy.autolayout.AutoLinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
