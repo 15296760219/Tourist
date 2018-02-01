@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.silent.fiveghos.tourist.ui.activity.HomeActivity;
+import com.zhy.autolayout.AutoLinearLayout;
 
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -51,9 +52,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
             }
         });
-
+        //忘记密码
         tv_forgrt_password.setOnClickListener(new View.OnClickListener() {
-
+            private AutoLinearLayout li;
             private PopupWindow popupWindow;
             private Button bu_forget_getcode;
             private EditText ed_forget_confirmpassword;
@@ -70,7 +71,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 ed_forget_password = view.findViewById(R.id.ed_forget_password);
                 ed_forget_confirmpassword = view.findViewById(R.id.ed_forget_confirmpassword);
                 bu_forget_getcode = view.findViewById(R.id.bu_forget_getcode);
-
+                li = view.findViewById(R.id.li);
 
                 popupWindow = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT,true);
                 popupWindow.showAsDropDown(login_username,0,-400);
@@ -83,6 +84,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         popupWindow.dismiss();
                     }
                 });
+
+
+                KeyboardUtils.showSoftInput(LoginActivity.this);
+          //      KeyboardUtils.showSoftInput(li);
+
 
 
 
@@ -101,9 +107,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                 startActivity(intent);
-
-
-//                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                 break;
 
         }
@@ -124,9 +127,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         // TODO validate success, do something
-
-
-
     }
 
 

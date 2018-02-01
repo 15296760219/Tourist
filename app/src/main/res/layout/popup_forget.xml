@@ -1,117 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/popup_bg2x"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:id="@+id/li"
+android:background="#19e64dff"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="319dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:layout_heightPercent="6%"
-        app:layout_widthPercent="75%">
+   <LinearLayout
+       android:background="#fff"
+       android:orientation="vertical"
+       android:layout_width="590px"
+android:layout_gravity="center"
+       android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/forget_finsh"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/btn_close_lick2x" />
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginRight="30px"
+           app:layout_heightPercent="6%"
+           app:layout_widthPercent="75%">
 
-    </RelativeLayout>
+           <ImageView
+               android:id="@+id/forget_finsh"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/btn_close_lick2x" />
 
-    <TextView
-        app:layout_heightPercent="10%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:textSize="30sp"
-        android:text="忘记密码"
-        android:textColor="#000"
-        android:gravity="center"
-        />
-    <TextView
-        app:layout_heightPercent="5%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:text="用户名:"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        />
+       </RelativeLayout>
 
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="50px"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:text="忘记密码"
+           android:textColor="#000"
+           android:textSize="15sp" />
 
+       <TextView
 
-    <EditText
-        android:id="@+id/ed_forget_name"
-        app:layout_heightPercent="7%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:background="@drawable/list_insert2x"
-        android:gravity="center"
-        android:textColor="#fff" />
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="45px"
+           android:gravity="center"
+           android:text="用户名:" />
 
 
-    <TextView
-        android:text="新密码:"
-        android:gravity="center"
-        app:layout_heightPercent="5%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp" />
+       <EditText
+           android:singleLine="true"
+           android:imeOptions="actionNext"
+           android:id="@+id/ed_forget_name"
+           android:layout_width="394px"
+           android:layout_height="61px"
+           android:layout_gravity="center"
+           android:layout_marginTop="13px"
+           android:background="@drawable/list_insert2x"
+           android:gravity="center"
+           android:hint="注册所以手机号"
+           android:textSize="10sp"
+           android:textColor="#fff" />
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="40px"
+           android:gravity="center"
+           android:text="新密码:" />
+
+
+       <EditText
+           android:singleLine="true"
+           android:imeOptions="actionNext"
+           android:id="@+id/ed_forget_password"
+           android:layout_width="394px"
+           android:layout_height="61px"
+           android:textSize="10sp"
+           android:layout_gravity="center"
+           android:layout_marginTop="13px"
+           android:background="@drawable/list_insert2x"
+           android:gravity="center"
+           android:hint="请输入新密码"
+           android:textColor="#fff" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="40px"
+           android:gravity="center"
+           android:text="验证码:" />
+
+
+       <EditText
+           android:singleLine="true"
+           android:imeOptions="actionDone"
+           android:textSize="10sp"
+           android:hint="请输入验证码"
+           android:id="@+id/ed_forget_confirmpassword"
+           android:layout_width="394px"
+           android:layout_height="61px"
+           android:layout_gravity="center"
+           android:layout_marginTop="13px"
+           android:background="@drawable/list_insert2x"
+           android:gravity="center"
+           android:textColor="#fff" />
+
+       <Button
+           android:id="@+id/bu_forget_getcode"
+           android:layout_width="460px"
+           android:layout_height="80px"
+           android:layout_gravity="center"
+           android:layout_marginTop="40px"
+           android:background="@drawable/btn_regain_click2x"
+           android:textSize="20sp"
+           android:layout_marginBottom="34px"
+           />
 
 
 
-    <EditText
-        app:layout_heightPercent="7%"
-        android:id="@+id/ed_forget_password"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:background="@drawable/list_insert2x"
-        android:gravity="center"
-        android:textColor="#fff" />
-    <TextView
-        android:text="验证码:"
-        android:gravity="center"
-        app:layout_heightPercent="5%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp" />
-
-
-
-    <EditText
-        app:layout_heightPercent="7%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:id="@+id/ed_forget_confirmpassword"
-        android:layout_width="0dp"
-        android:background="@drawable/list_insert2x"
-        android:gravity="center"
-        android:textColor="#fff" />
-    <Button
-        android:id="@+id/bu_forget_getcode"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/btn_regain_click2x"
-        app:layout_heightPercent="7%"
-        app:layout_widthPercent="75%"
-        android:layout_gravity="center"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:textSize="20sp"
-
-        />
-
+   </LinearLayout>
 </com.zhy.autolayout.AutoLinearLayout>

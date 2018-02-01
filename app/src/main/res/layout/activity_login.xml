@@ -8,18 +8,18 @@
     android:orientation="vertical">
 
     <com.zhy.autolayout.AutoLinearLayout
-        android:layout_marginTop="740px"
-       android:gravity="center_horizontal"
-        android:layout_width="538px"
-        android:layout_height="50px"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="716px"
+        android:gravity="center_horizontal"
+        android:layout_width="537px"
+        android:layout_marginLeft="105px"
+        android:layout_height="94px"
         android:background="#33ffffff"
        >
 
         <EditText
             android:id="@+id/login_username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="94px"
             android:background="#991D1D1D"
             android:drawablePadding="10px"
             android:drawableLeft="@drawable/icon_user2x"
@@ -33,16 +33,16 @@
 
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_marginTop="25px"
-        android:layout_width="528px"
-        android:layout_height="50px"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="537px"
+        android:layout_marginLeft="105px"
+        android:layout_height="94px"
         android:background="#33ffffff"
        >
 
         <EditText
             android:id="@+id/login_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="94px"
             android:background="#991D1D1D"
             android:drawablePadding="10px"
             android:drawableLeft="@drawable/icon_lock2x"
@@ -53,13 +53,12 @@
     </com.zhy.autolayout.AutoLinearLayout>
 
 
-
     <Button
-        android:layout_marginTop="46px"
         android:id="@+id/bu_login"
-        android:layout_width="538px"
-        android:layout_height="50px"
+        android:layout_width="537px"
+        android:layout_height="94px"
         android:layout_gravity="center"
+        android:layout_marginTop="47px"
         android:background="#1AEFC3"
         android:text="登录" />
 
@@ -68,10 +67,10 @@
 
 
       <com.zhy.autolayout.AutoRelativeLayout
-          android:layout_marginTop="143px"
-           android:layout_width="538px"
+          android:layout_marginTop="142px"
+           android:layout_width="537px"
           android:layout_height="match_parent"
-          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="105px"
 
 
           >
