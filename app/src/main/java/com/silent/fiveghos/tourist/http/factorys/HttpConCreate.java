@@ -15,7 +15,7 @@ import com.silent.fiveghos.tourist.http.products.HttpRequest;
 public class HttpConCreate implements HttpFactorys {
 
     @Override
-    public <T extends HttpRequest> HttpRequest conCreate(Context context, Class<T> clz) {
+    public <T extends HttpRequest> HttpRequest conCreate(Class<T> clz) {
         try {
             HttpRequest request = (HttpRequest) Class.forName(clz.getName()).newInstance();
             return request;

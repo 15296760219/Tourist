@@ -12,7 +12,7 @@ import com.silent.fiveghos.tourist.http.products.HttpRequest;
  */
 
 public interface HttpFactorys {
-     <T extends HttpRequest> HttpRequest conCreate(Context context, Class<T> clz);
+     <T extends HttpRequest> HttpRequest conCreate(Class<T> clz);
 
 
 }

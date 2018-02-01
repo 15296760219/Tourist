@@ -43,7 +43,7 @@ public class RetrofitRequest<T> implements HttpRequest<T> {
     private String TAG = "RetrofitRequest";
 
     @Override
-    public void doGet(Context context, String path, final Type type, final HttpCallback<T> callback) {
+    public void doGet(String path, final Type type, final HttpCallback<T> callback) {
         RetrofitApi api = RetrofitTools.getInstance().create(RetrofitApi.class);
 
         Observable<ResponseBody> doGet = api.doGet(path);
@@ -85,7 +85,7 @@ public class RetrofitRequest<T> implements HttpRequest<T> {
     }
 
     @Override
-    public void doPost(Context context, String url, final Type type, Map<String, String> mParams, final HttpCallback<T> callback) {
+    public void doPost(String url, final Type type, Map<String, String> mParams, final HttpCallback<T> callback) {
         RetrofitApi api = RetrofitTools.getInstance().create(RetrofitApi.class);
         Observable<ResponseBody> post = api.doPost(url, mParams);
         post.subscribeOn(Schedulers.io()).unsubscribeOn(Schedulers.io())

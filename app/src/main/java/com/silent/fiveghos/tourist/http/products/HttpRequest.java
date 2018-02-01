@@ -18,9 +18,9 @@ import java.util.Map;
  */
 
 public interface HttpRequest<T> {
-    void doGet(Context context, String path, final Type type, final HttpCallback<T> callback);
+    void doGet(String path, final Type type, final HttpCallback<T> callback);
 
-    void doPost(Context context, String url, final Type type, Map<String, String> mParams, final HttpCallback<T> callback);
+    void doPost(String url, final Type type, Map<String, String> mParams, final HttpCallback<T> callback);
 
     void uploadFile(Uri fileUri, HttpCallback<T> callback);
 
