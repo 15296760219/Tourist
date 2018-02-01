@@ -5,11 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-
     private Button bu_main;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         bu_main = (Button) findViewById(R.id.bu_main);
-
         bu_main.setOnClickListener(this);
     }
 

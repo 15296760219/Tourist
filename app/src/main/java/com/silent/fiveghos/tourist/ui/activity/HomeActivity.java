@@ -153,12 +153,10 @@ public class HomeActivity extends BaseActivity implements InfoContract.View, Rad
                 if(featuresFragment==null){
                     featuresFragment = new FeaturesFragment(HomeActivity.this);
                 }
-                        fragmentTransaction.replace(R.id.home_container,featuresFragment);
+                  fragmentTransaction.replace(R.id.home_container,featuresFragment);
                 break;
-
         }
                 fragmentTransaction.commit();
     }
-
-    }
+  }
 
