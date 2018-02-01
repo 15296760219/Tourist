@@ -52,5 +52,6 @@ android {
 }
 
 dependencies {
+    compile 'com.zhy:autolayout:1.4.5'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

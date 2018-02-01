@@ -43,6 +43,7 @@ public class PersonalFragment extends BaseFragment {
 
     @Override
     protected int getLayoutResouceId() {
-        return R.layout.activity_login;
+
+        return R.layout.isme;
     }
 }

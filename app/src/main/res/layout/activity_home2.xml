@@ -79,5 +79,4 @@
             android:textColor="@color/selector_bottom_font" />
     </RadioGroup>
 
-
 </com.zhy.autolayout.AutoLinearLayout>
