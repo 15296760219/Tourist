@@ -128,7 +128,7 @@
             android:name="BUGLY_ENABLE_DEBUG"
             android:value="true" />
         <meta-data android:name="design_width" android:value="750"></meta-data>
-        <meta-data android:name="design_height" android:value="1344"></meta-data>
+        <meta-data android:name="design_height" android:value="1334"></meta-data>
         <activity android:name=".UserserviceprotocolActivity"></activity>
     </application>
 
