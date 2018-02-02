@@ -42,7 +42,7 @@
 
             <TextView
                 android:id="@+id/title_item_order"
-                style="@style/item_features_big"
+                style="@style/text_balck_big"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="34px"
