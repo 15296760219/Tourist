@@ -141,7 +141,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
@@ -193,7 +193,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
@@ -244,7 +244,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
@@ -295,7 +295,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
@@ -346,7 +346,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
@@ -398,7 +398,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
@@ -450,7 +450,7 @@
                     android:src="@drawable/right_button" />
             </LinearLayout>
             <View
-                android:layout_width="650px"
+                android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginLeft="75px"
                 android:background="#91918b" />
