@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="335px"
+    android:layout_height="wrap_content">
     <android.support.v7.widget.CardView
+        android:background="@mipmap/ic_launcher"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="10dp"
@@ -13,10 +14,10 @@
         android:foreground="?android:attr/selectableItemBackground"
         app:cardBackgroundColor="#000">
 
-        <com.zhy.android.percent.support.PercentLinearLayout
+        <LinearLayout
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -29,18 +30,17 @@
 
             <TextView
                 android:id="@+id/content_hot_content"
-                android:layout_width="0dp"
-                app:layout_widthPercent="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_hot_item"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="20px"
                 android:gravity="center"
                 android:singleLine="false"
                 android:text="Trickers,Grenson,Common Project"
                 android:textColor="#ddd"
                 android:textSize="20sp"/>
-        </com.zhy.android.percent.support.PercentLinearLayout>
+        </LinearLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
 
 
