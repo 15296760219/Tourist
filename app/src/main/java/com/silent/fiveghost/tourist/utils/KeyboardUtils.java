@@ -1,4 +1,4 @@
-package com.silent.fiveghos.tourist;
+package com.silent.fiveghost.tourist.utils;
 
 import android.app.Activity;
 import android.content.Context;
