@@ -1,37 +1,56 @@
-package com.silent.fiveghost.tourist;
+package com.silent.fiveghos.tourist;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.silent.fiveghost.tourist.ui.activity.HomeActivity;
-import com.silent.fiveghost.tourist.utils.KeyboardUtils;
+
+import com.silent.fiveghos.tourist.contract.InfoContract;
+import com.silent.fiveghos.tourist.entry.LoginBean;
+import com.silent.fiveghos.tourist.presenter.InfoPresenter;
+import com.silent.fiveghos.tourist.ui.activity.HomeActivity;
 import com.zhy.autolayout.AutoLinearLayout;
 
+import java.util.HashMap;
+import java.util.Map;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class LoginActivity extends AppCompatActivity implements InfoContract.View<LoginBean>, View.OnClickListener {
     private EditText login_username;
     private EditText login_password;
     private Button bu_login;
     private TextView tv_forgrt_password;
+    //是否状态栏透明
+    protected boolean isSetStatusBar = false;
     private TextView tv_register;
-
+    private Map<String, String> map = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
+
+        if (isSetStatusBar) {
+            steepStatusBar();
+        }
+
+
+        InfoPresenter infoPresenter = new InfoPresenter(this);
+
 
 
     }
@@ -74,7 +93,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 li = view.findViewById(R.id.li);
 
                 popupWindow = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT,true);
-                popupWindow.showAsDropDown(login_username,0,-400);
+//                popupWindow.showAsDropDown(login_username,0,-400);
+                popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
                 popupWindow.setBackgroundDrawable(new ColorDrawable(0x00000000));
                 popupWindow.setTouchable(true);
 
@@ -130,6 +150,27 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
+    @Override
+    public void success(LoginBean loginBean) {
 
+    }
 
+    @Override
+    public void failure(Throwable e) {
+
+    }
+
+    /**
+     * [沉浸状态栏]
+     */
+    private void steepStatusBar() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            // 透明状态栏
+            getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            // 透明导航栏
+            getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
+    }
 }

@@ -19,6 +19,7 @@ public class InfoPresenter implements InfoContract.Presenter {
     private InfoContract.View view;
     private InfoModel mModel;
 
+
     public InfoPresenter(InfoContract.View view){
         this.view=view;
         mModel = new InfoModel();

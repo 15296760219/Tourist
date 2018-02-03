@@ -13,20 +13,34 @@
         android:layout_width="537px"
         android:layout_marginLeft="105px"
         android:layout_height="94px"
-        android:background="#33ffffff"
+        android:background="#212121"
        >
 
-        <EditText
-            android:id="@+id/login_username"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="94px"
-            android:background="#991D1D1D"
-            android:drawablePadding="10px"
-            android:drawableLeft="@drawable/icon_user2x"
-            android:hint="  用户名/手机号/邮箱"
-            android:textColor="#FFF"
-            android:textColorHint="#FFF"
-            android:textSize="12sp" />
+            android:background="#212121"
+            android:layout_height="94px">
+
+<ImageView
+    android:layout_margin="20px"
+    android:background="@drawable/icon_user2x"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+                android:background="#212121"
+                android:hint="用户名/手机号/邮箱"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
     </com.zhy.autolayout.AutoLinearLayout>
 
 
@@ -36,20 +50,30 @@
         android:layout_width="537px"
         android:layout_marginLeft="105px"
         android:layout_height="94px"
-        android:background="#33ffffff"
+        android:background="#212121"
        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#212121"
+            android:layout_height="94px">
+
+        <ImageView
+            android:layout_margin="20px"
+            android:background="@drawable/icon_lock2x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="94px"
-            android:background="#991D1D1D"
-            android:drawablePadding="10px"
-            android:drawableLeft="@drawable/icon_lock2x"
-            android:hint="   6位数字或字母"
+            android:background="#212121"
+            android:layout_gravity="center_vertical"
+            android:hint="    6位数字或字母"
             android:textColor="#fff"
             android:textColorHint="#FFF"
             android:textSize="12sp" />
+        </LinearLayout>
     </com.zhy.autolayout.AutoLinearLayout>
 
 

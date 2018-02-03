@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="720px"
     android:id="@+id/li"
-android:background="#19e64dff"
+    android:background="#19e64dff"
+
+    android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
    <LinearLayout
-       android:background="#fff"
+       android:background="@drawable/popupbg2x"
        android:orientation="vertical"
        android:layout_width="590px"
-android:layout_gravity="center"
-       android:layout_height="wrap_content">
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal"
+       android:layout_height="720px">
 
        <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_gravity="center"
            android:layout_marginRight="30px"
-           app:layout_heightPercent="6%"
-           app:layout_widthPercent="75%">
+        >
 
            <ImageView
                android:id="@+id/forget_finsh"
