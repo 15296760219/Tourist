@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 
-import com.silent.fiveghos.tourist.LoginActivity;
+
 import com.silent.fiveghost.tourist.utils.PrefUtils;
 
 import java.util.ArrayList;

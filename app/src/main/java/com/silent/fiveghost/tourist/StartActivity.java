@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.RelativeLayout;
 
-import com.silent.fiveghos.tourist.LoginActivity;
 import com.silent.fiveghost.tourist.utils.PrefUtils;
 
 
