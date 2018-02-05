@@ -2,6 +2,7 @@ package com.silent.fiveghost.tourist.ui.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
@@ -21,6 +22,8 @@ import com.silent.fiveghost.tourist.adapter.MyPagerAdapter;
 import com.silent.fiveghost.tourist.app.base.BaseFragment;
 import com.silent.fiveghost.tourist.ui.activity.HomeActivity;
 import com.silent.fiveghost.tourist.ui.activity.SearchActivity;
+import com.silent.fiveghost.tourist.customview.ObservableScrollView;
+import com.zhy.autolayout.AutoLinearLayout;
 
 
 import java.util.ArrayList;
@@ -36,7 +39,7 @@ import java.util.List;
  */
 
 @SuppressLint("ValidFragment")
-public class HomeFragment extends BaseFragment{
+public class HomeFragment extends BaseFragment implements ObservableScrollView.ScrollViewListener {
 
     private Context mContext;
     private TextView home_Search_Text;
@@ -62,6 +65,9 @@ public class HomeFragment extends BaseFragment{
     private HomeRecyclerViewAdapter mHomeRecyclerViewAdapter;
     private List<String> mImgesUrl;
     private ViewPager mCardViewPager;
+    private ObservableScrollView mScroll_home;
+    private AutoLinearLayout mLl_home_search;
+    private int imageHeight = 400;
 
     public HomeFragment(HomeActivity homeActivity) {
         this.mContext = homeActivity;
@@ -81,11 +87,13 @@ public class HomeFragment extends BaseFragment{
      * 初始化View
      */
     @Override
-    protected void initView(){
-         home_Search_Text = findViewById(R.id.home_Search_Text);
-         home_Message_Image = findViewById(R.id.home_Message_Image);
-         image_Zhoubian = findViewById(R.id.image_Zhoubian);
-         image_Dingwei = findViewById(R.id.image_Dingwei);
+    protected void initView() {
+        mLl_home_search = findViewById(R.id.ll_home_search);
+        home_Search_Text = findViewById(R.id.home_Search_Text);
+        home_Message_Image = findViewById(R.id.home_Message_Image);
+        mScroll_home = findViewById(R.id.scroll_home);
+        image_Zhoubian = findViewById(R.id.image_Zhoubian);
+        image_Dingwei = findViewById(R.id.image_Dingwei);
         image_Guidestyle = findViewById(R.id.image_Guidestyle);
         image_Popular = findViewById(R.id.image_Popular);
         image_Zutuan = findViewById(R.id.image_Zutuan);
@@ -99,12 +107,12 @@ public class HomeFragment extends BaseFragment{
         text_Rili = findViewById(R.id.text_Rili);
         text_Dingwei = findViewById(R.id.text_Dingwei);
         home_Routes_Recycler = findViewById(R.id.home_Routes_Recycler);
-        home_Guidestyle  = findViewById(R.id.home_Guidestyle);
-         home_Popular = findViewById(R.id.home_Popular);
+        home_Guidestyle = findViewById(R.id.home_Guidestyle);
+        home_Popular = findViewById(R.id.home_Popular);
         list_Guidestyle = findViewById(R.id.list_Guidestyle);
         mCardViewPager = findViewById(R.id.cardViewPager);
-
-
+        mLl_home_search.bringToFront();
+        mScroll_home.setScrollViewListener(this);
 
     }
 
@@ -112,7 +120,7 @@ public class HomeFragment extends BaseFragment{
      * 事件监听
      */
     @Override
-    protected void setListener(){
+    protected void setListener() {
         //点击搜索框的页面跳转
         home_Search_Text.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,17 +147,13 @@ public class HomeFragment extends BaseFragment{
 
             }
         });
-
-
-
-
     }
 
     /**
      * 设置数据的方法
      */
     @Override
-    protected void onLazyLoad(){
+    protected void onLazyLoad() {
         mCardViewPager.setOffscreenPageLimit(3);
         ArrayList<Integer> mData = new ArrayList<>();
         mData.add(R.mipmap.ic_launcher);
@@ -158,9 +162,9 @@ public class HomeFragment extends BaseFragment{
         mData.add(R.mipmap.ic_launcher);
         mData.add(R.mipmap.ic_launcher);
         mData.add(R.mipmap.ic_launcher);
-        mCardViewPager.setAdapter(new MyPagerAdapter(mData,mContext));
+        mCardViewPager.setAdapter(new MyPagerAdapter(mData, mContext));
 //        mCardViewPager.setPageMargin();
-        mCardViewPager.setPageTransformer(true,new AlphaPageTransformer());
+        mCardViewPager.setPageTransformer(true, new AlphaPageTransformer());
 
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         home_Routes_Recycler.setLayoutManager(staggeredGridLayoutManager);
@@ -169,7 +173,7 @@ public class HomeFragment extends BaseFragment{
         integers.add(R.mipmap.ic_launcher);
         integers.add(R.mipmap.ic_launcher);
         integers.add(R.mipmap.ic_launcher);
-        mHomeRecyclerViewAdapter = new HomeRecyclerViewAdapter(integers,mContext);
+        mHomeRecyclerViewAdapter = new HomeRecyclerViewAdapter(integers, mContext);
         mHomeRecyclerViewAdapter.addHeight(integers);
         home_Routes_Recycler.setAdapter(mHomeRecyclerViewAdapter);
         HomeListViewAdapter homeListViewAdapter = new HomeListViewAdapter();
@@ -186,10 +190,19 @@ public class HomeFragment extends BaseFragment{
         return R.layout.frag_home;
     }
 
-
-
-
-
+    @Override
+    public void onScrollChanged(ObservableScrollView scrollView, int x, int y, int oldx, int oldy) {
+        if (y <= 0) {
+            mLl_home_search.setBackgroundColor(Color.argb((int) 0, 255, 255, 255));
+        } else if (y > 0 && y <= imageHeight) {
+            float scale = (float) y / imageHeight;
+            float alpha = (255 * scale);
+            // 只是layout背景透明
+            mLl_home_search.setBackgroundColor(Color.argb((int) alpha, 255, 255, 255));
+        } else {
+            mLl_home_search.setBackgroundColor(Color.argb((int) 255, 255, 255, 255));
+        }
+    }
 }
 
 

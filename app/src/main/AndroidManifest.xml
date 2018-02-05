@@ -137,6 +137,7 @@
         </activity>
         <activity android:name=".ui.activity.OrderContentActivity">
         </activity>
+        <activity android:name=".ui.activity.SearchActivity"/>
     </application>
 
 </manifest>
