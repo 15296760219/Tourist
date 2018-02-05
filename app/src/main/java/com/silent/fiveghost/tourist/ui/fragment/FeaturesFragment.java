@@ -9,12 +9,14 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.silent.fiveghost.tourist.R;
 import com.silent.fiveghost.tourist.adapter.FeaturesLvAdapter;
 import com.silent.fiveghost.tourist.app.base.BaseFragment;
 import com.silent.fiveghost.tourist.ui.activity.HomeActivity;
+import com.silent.fiveghost.tourist.ui.activity.RouteActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -128,6 +130,6 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
 
     @Override
     public void onItemClick(AdapterView<?> view, View view1, int i, long l) {
-
+        readyGo(RouteActivity.class);
     }
 }

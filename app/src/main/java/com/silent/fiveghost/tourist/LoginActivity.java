@@ -1,4 +1,4 @@
-package com.silent.fiveghos.tourist;
+package com.silent.fiveghost.tourist;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -18,10 +18,13 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.silent.fiveghos.tourist.contract.InfoContract;
-import com.silent.fiveghos.tourist.entry.LoginBean;
-import com.silent.fiveghos.tourist.presenter.InfoPresenter;
-import com.silent.fiveghos.tourist.ui.activity.HomeActivity;
+import com.silent.fiveghost.tourist.entry.LoginBean;
+import com.silent.fiveghost.tourist.R;
+import com.silent.fiveghost.tourist.RegisterActivity;
+import com.silent.fiveghost.tourist.contract.InfoContract;
+import com.silent.fiveghost.tourist.presenter.InfoPresenter;
+import com.silent.fiveghost.tourist.ui.activity.HomeActivity;
+import com.silent.fiveghost.tourist.utils.KeyboardUtils;
 import com.zhy.autolayout.AutoLinearLayout;
 
 import java.util.HashMap;

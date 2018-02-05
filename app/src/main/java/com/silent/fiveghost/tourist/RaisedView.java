@@ -1,4 +1,4 @@
-package com.silent.fiveghos.tourist;
+package com.silent.fiveghost.tourist;
 
 import android.annotation.TargetApi;
 import android.content.Context;

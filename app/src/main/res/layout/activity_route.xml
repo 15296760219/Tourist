@@ -32,10 +32,11 @@
                     android:layout_marginTop="56px">
 
                     <ImageView
+                        android:id="@+id/return_route"
                         android:layout_width="56px"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="34px"
-                        android:background="#f00"/>
+                        android:src="@drawable/isme_back_left" />
 
                     <ImageView
                         android:layout_width="56px"
@@ -549,6 +550,7 @@
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <Button
+                        android:id="@+id/sign_route"
                         android:layout_width="473px"
                         android:layout_height="80px"
                         android:layout_marginRight="38px"

@@ -16,6 +16,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="71px">
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="36px"/>
+            </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -651,6 +658,7 @@
                     android:textSize="18sp"/>
 
                 <Button
+                    android:id="@+id/submit_order_content"
                     style="@style/text_balck_big"
                     android:layout_width="240px"
                     android:layout_height="80px"

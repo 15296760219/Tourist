@@ -26,6 +26,7 @@
             android:layout_height="41px"
             android:layout_marginLeft="163px"
             android:layout_marginTop="12px"
+            android:focusable="false"
             android:background="@drawable/love_btn2"
             android:button="@null"/>
     </com.zhy.autolayout.AutoRelativeLayout>
