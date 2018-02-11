@@ -1,4 +1,4 @@
-package com.silent.fiveghost.tourist.widget;
+package com.silent.fiveghost.tourist.customview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

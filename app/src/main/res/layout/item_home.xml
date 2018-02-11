@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="268px"
+              android:paddingBottom="14px"
+              android:paddingLeft="42px"
+              android:paddingRight="42px"
+              android:paddingTop="14px">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        app:cardCornerRadius="14px"
+        app:cardElevation="10px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20px"
+            android:paddingLeft="21px"
+            android:paddingRight="33px"
+            android:paddingTop="20px">
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="22px"
+                android:paddingRight="12px"
+                android:paddingTop="10px">
+
+                <TextView
+                    android:id="@+id/name_item_home"
+                    style="@style/text_balck_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="导游A"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_item_home"
+                    android:layout_marginTop="22px"
+                    android:text="擅长路线 :  呵呵哒"/>
+
+                <RatingBar
+                    android:layout_width="165px"
+                    android:layout_height="25px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:numStars="5"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -51,7 +51,7 @@
                     android:maxEms="20"
                     android:text="擅长路线：XXXXXXXXXXXXXXXXXXXXXXX"/>
 
-                <com.silent.fiveghost.tourist.widget.RatingBar
+                <com.silent.fiveghost.tourist.customview.RatingBar
                     android:layout_marginRight="35px"
                     android:layout_marginBottom="20px"
                     android:layout_alignParentRight="true"

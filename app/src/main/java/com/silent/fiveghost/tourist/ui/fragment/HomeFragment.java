@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -57,17 +59,16 @@ public class HomeFragment extends BaseFragment implements ObservableScrollView.S
     private TextView text_Popular;
     private ImageView image_Popular;
     private LinearLayout home_Popular;
-    private RecyclerView home_Routes_Recycler;
     private TextView text_Guidestyle;
     private ImageView image_Guidestyle;
     private LinearLayout home_Guidestyle;
     private ListView list_Guidestyle;
-    private HomeRecyclerViewAdapter mHomeRecyclerViewAdapter;
     private List<String> mImgesUrl;
     private ViewPager mCardViewPager;
     private ObservableScrollView mScroll_home;
     private AutoLinearLayout mLl_home_search;
     private int imageHeight = 400;
+    private HomeListViewAdapter mAdapter;
 
     public HomeFragment(HomeActivity homeActivity) {
         this.mContext = homeActivity;
@@ -106,14 +107,12 @@ public class HomeFragment extends BaseFragment implements ObservableScrollView.S
         text_Zhinan = findViewById(R.id.text_Zhinan);
         text_Rili = findViewById(R.id.text_Rili);
         text_Dingwei = findViewById(R.id.text_Dingwei);
-        home_Routes_Recycler = findViewById(R.id.home_Routes_Recycler);
         home_Guidestyle = findViewById(R.id.home_Guidestyle);
         home_Popular = findViewById(R.id.home_Popular);
         list_Guidestyle = findViewById(R.id.list_Guidestyle);
         mCardViewPager = findViewById(R.id.cardViewPager);
         mLl_home_search.bringToFront();
         mScroll_home.setScrollViewListener(this);
-
     }
 
     /**
@@ -139,14 +138,6 @@ public class HomeFragment extends BaseFragment implements ObservableScrollView.S
 
             }
         });
-        mHomeRecyclerViewAdapter.setOnClickListener(new HomeRecyclerViewAdapter.OnItemClickListener() {
-            @Override
-            public void onClick(View view, int position) {
-                //TODO
-
-
-            }
-        });
     }
 
     /**
@@ -167,19 +158,27 @@ public class HomeFragment extends BaseFragment implements ObservableScrollView.S
         mCardViewPager.setPageTransformer(true, new AlphaPageTransformer());
 
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-        home_Routes_Recycler.setLayoutManager(staggeredGridLayoutManager);
-        ArrayList<Integer> integers = new ArrayList<>();
-        integers.add(R.mipmap.ic_launcher);
-        integers.add(R.mipmap.ic_launcher);
-        integers.add(R.mipmap.ic_launcher);
-        integers.add(R.mipmap.ic_launcher);
-        mHomeRecyclerViewAdapter = new HomeRecyclerViewAdapter(integers, mContext);
-        mHomeRecyclerViewAdapter.addHeight(integers);
-        home_Routes_Recycler.setAdapter(mHomeRecyclerViewAdapter);
-        HomeListViewAdapter homeListViewAdapter = new HomeListViewAdapter();
-        list_Guidestyle.setAdapter(homeListViewAdapter);
+//        home_Routes_Recycler.setLayoutManager(staggeredGridLayoutManager);
+//        ArrayList<Integer> integers = new ArrayList<>();
+//        integers.add(R.mipmap.ic_launcher);
+//        integers.add(R.mipmap.ic_launcher);
+//        integers.add(R.mipmap.ic_launcher);
+//        integers.add(R.mipmap.ic_launcher);
+//        mHomeRecyclerViewAdapter = new HomeRecyclerViewAdapter(integers, mContext);
+//        mHomeRecyclerViewAdapter.addHeight(integers);
+//        home_Routes_Recycler.setAdapter(mHomeRecyclerViewAdapter);
+
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("");
+        strings.add("");
+        strings.add("");
+        strings.add("");
+        strings.add("");
+        strings.add("");
 
 
+        mAdapter = new HomeListViewAdapter(getActivity(),strings);
+        list_Guidestyle.setAdapter(mAdapter);
     }
 
     /**
