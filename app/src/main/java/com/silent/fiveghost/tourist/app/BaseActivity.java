@@ -9,12 +9,13 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import com.zhy.autolayout.AutoLayoutActivity;
 
 import java.util.Stack;
 
@@ -26,7 +27,7 @@ import java.util.Stack;
  *定义抽象的BaseActivity,其余的Activity全部继承BaseActivity，
  *便于统一管理，一处修改，到处有效
  */
-public abstract class BaseActivity extends AppCompatActivity{
+public abstract class BaseActivity extends AutoLayoutActivity{
 
     //是否允许全屏
     protected boolean mAllowFullScreen = false;
@@ -76,6 +77,7 @@ public abstract class BaseActivity extends AppCompatActivity{
      * @param clz 所跳转的目的Activity类
      */
     public void startActivity(Class<?> clz) {
+
         startActivity(new Intent(this, clz));
     }
 
@@ -86,6 +88,7 @@ public abstract class BaseActivity extends AppCompatActivity{
      * @param requestCode 请求码
      */
     public void startActivityForResult(Class<?> clz, int requestCode) {
+
         startActivityForResult(new Intent(this, clz), requestCode);
     }
 
@@ -162,12 +165,13 @@ public abstract class BaseActivity extends AppCompatActivity{
      * 子类可用该方法查找控件
      */
     protected <T extends View> T findView(int id) {
+
         return (T) findViewById(id);
     }
     /**
      * [沉浸状态栏]
      */
-    private void steepStatusBar() {
+    private void steepStatusBar(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             // 透明状态栏
             getWindow().addFlags(
