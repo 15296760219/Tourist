@@ -18,11 +18,27 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="71px">
+                android:layout_height="175px"
+                android:background="#2b3329">
+
                 <ImageView
+                    android:id="@+id/return_order_content"
                     android:layout_width="22px"
-                    android:layout_height="36px"/>
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="42px"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    style="@style/text_balck_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="订单内容"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
             </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,14 +61,14 @@
                     android:spacing="25px"/>
 
                 <RelativeLayout
-                    android:layout_width="695px"
-                    android:layout_height="110px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="35px">
 
                     <TextView
                         android:id="@+id/title_order_content"
                         android:layout_width="wrap_content"
-                        android:layout_height="45px"
+                        android:layout_height="wrap_content"
                         android:text="云南大理古城小团3日游"
                         android:textColor="#fafdfc"
                         android:textSize="20sp"/>
@@ -62,7 +78,9 @@
                         android:layout_width="35px"
                         android:layout_height="35px"
                         android:layout_below="@id/title_order_content"
-                        android:layout_marginTop="25px"/>
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="25px"
+                        android:src="@drawable/isme_tubiao"/>
 
                     <TextView
                         android:id="@+id/locationtext_order_content"
@@ -76,23 +94,41 @@
                         android:textColor="#bcbec3"
                         android:textSize="16sp"/>
 
+                    <com.silent.fiveghost.tourist.customview.RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:clickable="false"
+                        app:starCount="5"
+                        app:starEmpty="@drawable/pic_star_grey2x"
+                        app:starFill="@drawable/pic_star_yellow2x"
+                        app:starImageSize="25px"
+                        app:starPadding="15px"/>
+
                 </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100px"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30px">
 
                     <ExpandableListView
-                        android:layout_width="330px"
-                        android:layout_height="100px"
-                        android:background="#2e353e"/>
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e353e"
+                        android:paddingBottom="41px"
+                        android:paddingTop="34px"/>
 
                     <ExpandableListView
-                        android:layout_width="330px"
-                        android:layout_height="100px"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="30px"
-                        android:background="#2e353e"/>
+                        android:layout_weight="1"
+                        android:background="#2e353e"
+                        android:paddingBottom="41px"
+                        android:paddingTop="34px"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -109,15 +145,16 @@
                     style="@style/text_balck_big"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15px"
+                    android:layout_marginLeft="18px"
                     android:text="出行信息"/>
 
+                <!--出行信息-->
                 <android.support.v7.widget.CardView
-                    android:layout_width="685px"
-                    android:layout_height="495px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30px"
-                    android:paddingBottom="30px"
-                    android:paddingTop="30px"
+                    android:paddingLeft="11px"
+                    android:paddingRight="11px"
                     app:cardCornerRadius="7px"
                     app:cardElevation="10px">
 
@@ -128,10 +165,10 @@
                         android:layout_marginRight="28px"
                         android:orientation="vertical">
 
+                        <!--共计总价-->
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="95px"
-                            android:paddingBottom="26px"
+                            android:layout_height="wrap_content"
                             android:paddingTop="30px">
 
                             <LinearLayout
@@ -142,23 +179,24 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    style="@style/options_features_grey"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="共计/张"/>
 
                                 <TextView
-                                    android:id="@+id/number_order_content"
+                                    android:id="@+id/number_item_order_content2"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="3"/>
+
                             </LinearLayout>
 
                             <View
                                 android:layout_width="4px"
-                                android:layout_height="60px"
-                                android:background="#dadada"/>
+                                android:layout_height="match_parent"
+                                android:background="#dadada"
+                                android:gravity="center"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -168,39 +206,44 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    style="@style/options_features_grey"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="总价/元"/>
 
                                 <TextView
-                                    android:id="@+id/price_order_content"
+                                    android:id="@+id/price_item_order_content3"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="3000"/>
+                                    android:text="3"/>
+
                             </LinearLayout>
+
                         </LinearLayout>
 
+                        <!--成人-->
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px">
 
                             <ImageView
                                 android:layout_width="35px"
                                 android:layout_height="35px"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15px"
+                                android:src="@mipmap/ic_launcher"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="70px"
+                                android:layout_marginLeft="83px"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/adultprice_order_content"
+                                    android:id="@+id/adultprice_item_order_content1"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -211,6 +254,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="成人票/人"/>
+
                             </LinearLayout>
 
                             <LinearLayout
@@ -222,47 +266,61 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/reduction1_order_content"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:id="@+id/reduction1_item_order_content3"
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
 
                                 <TextView
-                                    android:id="@+id/adultnum_order_content"
+                                    android:id="@+id/adultnum_item_order_content3"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="3"/>
 
                                 <ImageView
-                                    android:id="@+id/add_order_content"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:id="@+id/add_item_order_content1"
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
+
                             </LinearLayout>
+
                         </RelativeLayout>
 
                         <View
-                            android:layout_width="630px"
+                            android:layout_width="match_parent"
                             android:layout_height="5px"
+                            android:layout_marginTop="26px"
                             android:background="#edcf12"/>
 
+                        <!--儿童-->
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35px">
 
                             <ImageView
                                 android:layout_width="35px"
                                 android:layout_height="35px"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15px"
+                                android:src="@mipmap/ic_launcher"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="70px"
+                                android:layout_marginLeft="83px"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/childprice_order_content"
+                                    android:id="@+id/childprice_item_order_content3"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -273,6 +331,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="儿童票/人"/>
+
                             </LinearLayout>
 
                             <LinearLayout
@@ -284,48 +343,61 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/reduction2_order_content"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:id="@+id/reduction3_item_order_content"
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
 
                                 <TextView
-                                    android:id="@+id/childnum_order_content"
+                                    android:id="@+id/childnum_item_order_content2"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="3"/>
 
                                 <ImageView
-                                    android:id="@+id/add2_order_content"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:id="@+id/add5_item_order_content"
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
+
                             </LinearLayout>
+
                         </RelativeLayout>
 
                         <View
-                            android:layout_width="630px"
+                            android:layout_width="match_parent"
                             android:layout_height="5px"
+                            android:layout_marginTop="26px"
                             android:background="#e7e7e7"/>
 
+                        <!--团体-->
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="90px"
-                            android:layout_marginTop="25px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="34px"
+                            android:layout_marginTop="30px">
 
                             <ImageView
                                 android:layout_width="35px"
                                 android:layout_height="35px"
                                 android:layout_centerVertical="true"
-                                android:background="#f00"/>
+                                android:layout_marginLeft="15px"
+                                android:src="@mipmap/ic_launcher"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="70px"
+                                android:layout_marginLeft="83px"
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/teamprice_order_content"
+                                    android:id="@+id/teamprice_item_order_content2"
                                     style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -346,14 +418,14 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="15px"
                                         android:text="(10人以上可团)"
-                                        android:textColor="#ff0000"
-                                        android:textSize="16sp"/>
+                                        android:textColor="#ff0000"/>
+
                                 </LinearLayout>
 
                             </LinearLayout>
 
                             <ImageView
-                                android:id="@+id/add3_order_content"
+                                android:id="@+id/add4_item_order_content"
                                 android:layout_width="35px"
                                 android:layout_height="35px"
                                 android:layout_alignParentRight="true"
@@ -361,19 +433,22 @@
                                 android:layout_marginLeft="15px"/>
 
                         </RelativeLayout>
+
                     </LinearLayout>
+
                 </android.support.v7.widget.CardView>
 
+                <!--预定人信息-->
                 <android.support.v7.widget.CardView
-                    android:layout_width="685px"
-                    android:layout_height="530px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="40px"
                     app:cardCornerRadius="7px"
                     app:cardElevation="10px">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="80px"
                         android:layout_marginRight="80px"
                         android:layout_marginTop="35px"
@@ -381,7 +456,7 @@
 
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40px">
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:id="@+id/text_content"
@@ -401,24 +476,24 @@
                         <TextView
                             style="@style/options_features_grey"
                             android:layout_width="wrap_content"
-                            android:layout_height="28px"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="45px"
                             android:text="出行人姓名"/>
 
                         <EditText
                             android:id="@+id/etName_order_content"
-                            android:layout_width="match_parent"
-                            android:layout_height="80px"
-                            android:layout_marginTop="10px"
                             style="@style/text_balck_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
                             android:background="@drawable/border_gray_et"
                             android:hint="请输入您的姓名"
-                            android:paddingLeft="30px"/>
+                            android:padding="30px"/>
 
                         <TextView
                             style="@style/options_features_grey"
                             android:layout_width="wrap_content"
-                            android:layout_height="28px"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="45px"
                             android:text="联系电话（用户接收订单信息）"/>
 
@@ -426,17 +501,18 @@
                             android:id="@+id/etPhone_order_content"
                             style="@style/text_balck_big"
                             android:layout_width="match_parent"
-                            android:layout_height="80px"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="10px"
                             android:background="@drawable/border_gray_et"
-                            android:text="1356 6709 842"
-                            android:paddingLeft="30px"/>
+                            android:padding="30px"
+                            android:text="1356 6709 842"/>
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="25px"
+                            android:layout_height="wrap_content"
                             android:layout_marginBottom="30px"
                             android:layout_marginTop="65px"
+                            android:autoLink="all"
                             android:gravity="center"
                             android:text="查看预定限制"
                             android:textColor="#ff0000"
@@ -446,9 +522,10 @@
 
                 </android.support.v7.widget.CardView>
 
+                <!--出行人信息-->
                 <android.support.v7.widget.CardView
-                    android:layout_width="685px"
-                    android:layout_height="865px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="35px"
                     app:cardCornerRadius="7px"
                     app:cardElevation="10px">
@@ -458,7 +535,8 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="80px"
                         android:layout_marginRight="80px"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:paddingBottom="65px">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -482,14 +560,17 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="65px"
-                            android:layout_marginTop="55px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55px"
+                            android:paddingBottom="20px"
+                            android:paddingTop="20px">
 
                             <Button
                                 style="@style/options_features_grey"
                                 android:layout_width="0px"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:background="#ffffff"
                                 android:text="儿童"/>
 
                             <Button
@@ -497,17 +578,19 @@
                                 android:layout_width="0px"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:background="#000000"
                                 android:text="成人"/>
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="35px">
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0px"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -517,19 +600,22 @@
                                     android:text="姓名"/>
 
                                 <EditText
-                                    style="@style/text_balck_big"
-                                    android:layout_width="250px"
-                                    android:layout_height="80px"
+                                    style="@style/text_dark_center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="5px"
                                     android:background="@drawable/border_gray_et"
-                                    android:hint="请输入您的姓名"
-                                    android:paddingLeft="30px"/>
+                                    android:hint="请输入姓名"
+                                    android:paddingBottom="25px"
+                                    android:paddingLeft="30px"
+                                    android:paddingTop="25px"/>
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0px"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="45px"
+                                android:layout_weight="1"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -540,12 +626,14 @@
 
                                 <EditText
                                     style="@style/options_features_grey"
-                                    android:layout_width="250px"
-                                    android:layout_height="80px"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="5px"
                                     android:background="@drawable/border_gray_et"
                                     android:hint="请选择"
-                                    android:paddingLeft="30px"/>
+                                    android:paddingBottom="25px"
+                                    android:paddingLeft="30px"
+                                    android:paddingTop="25px"/>
                             </LinearLayout>
 
                         </LinearLayout>
@@ -561,11 +649,13 @@
                             android:id="@+id/etIDNumber_order_content"
                             style="@style/text_balck_big"
                             android:layout_width="match_parent"
-                            android:layout_height="80px"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="10px"
                             android:background="@drawable/border_gray_et"
-                            android:text="1423344234245425435"
-                            android:paddingLeft="30px"/>
+                            android:paddingBottom="25px"
+                            android:paddingLeft="30px"
+                            android:paddingTop="25px"
+                            android:text="1423344234245425435"/>
 
                         <TextView
                             style="@style/options_features_grey"
@@ -578,11 +668,13 @@
                             android:id="@+id/etOrderPhone_order_content"
                             style="@style/text_balck_big"
                             android:layout_width="match_parent"
-                            android:layout_height="80px"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="10px"
                             android:background="@drawable/border_gray_et"
-                            android:text="1423344234245425435"
-                            android:paddingLeft="30px"/>
+                            android:paddingBottom="25px"
+                            android:paddingLeft="30px"
+                            android:paddingTop="25px"
+                            android:text="1423344234245425435"/>
 
                         <TextView
                             style="@style/options_features_grey"
@@ -596,12 +688,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="35px"
+                            android:background="@null"
                             android:hint=" （内容补充，XX字以内）"/>
 
                         <View
+                            style="@style/text_balck_big"
                             android:layout_width="match_parent"
                             android:layout_height="7px"
-                            style="@style/text_balck_big"
                             android:background="#000000"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -632,9 +725,11 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="130px"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="290px"
-                android:background="#000000">
+                android:background="#000000"
+                android:paddingBottom="26px"
+                android:paddingTop="26px">
 
                 <TextView
                     android:id="@+id/personnumber_order_content"
@@ -642,7 +737,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="35px"
-                    android:layout_marginTop="35px"
                     android:text="成人1，儿童2"
                     android:textColor="#828187"/>
 
@@ -653,7 +747,7 @@
                     android:layout_below="@id/personnumber_order_content"
                     android:layout_marginLeft="35px"
                     android:layout_marginTop="10px"
-                    android:text="30000"
+                    android:text="¥30000"
                     android:textColor="#ffffff"
                     android:textSize="18sp"/>
 
