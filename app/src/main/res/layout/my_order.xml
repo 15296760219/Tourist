@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:layout_below="@id/li"
         android:background="#f3f6f8"/>
+
+    <View
+        android:background="#1c2d3c"
+        android:layout_width="match_parent"
+        android:layout_height="360px"/>
+
     <include
         layout="@layout/home_searchbar"
         android:layout_width="match_parent"
