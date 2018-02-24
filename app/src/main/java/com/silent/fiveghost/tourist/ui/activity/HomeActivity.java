@@ -21,6 +21,7 @@ import com.silent.fiveghost.tourist.ui.fragment.PersonalFragment;
 
 public class HomeActivity extends BaseActivity implements InfoContract.View, RadioGroup.OnCheckedChangeListener, View.OnClickListener {
 
+
     private FrameLayout home_container;
     private RadioButton radio_one;
     private RadioButton radio_two;
