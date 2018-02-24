@@ -58,16 +58,10 @@ public class InfoModel implements InfoContract.Model {
                         try {
                             String string = responseBody.string();
                             Log.e("TAG", string);
-
                             Gson gson = new Gson();
                             Type[] genericInterfaces = callback.getClass().getGenericInterfaces();
-                            Type[] actualTypeArguments=null;
-                            for (int i = 0; i < genericInterfaces.length; i++) {
-                                if(genericInterfaces[i] instanceof ParameterizedType){
-                                    actualTypeArguments = ((ParameterizedType) genericInterfaces[i]).getActualTypeArguments();
-                                }
-                            }
-                            Type types =  actualTypeArguments[0];
+                            Type[] actualTypeArguments = ((ParameterizedType) genericInterfaces[0]).getActualTypeArguments();
+                            Type types = actualTypeArguments[0];
                             Object o = gson.fromJson(string, types);
                             callback.success(o);
 
@@ -109,13 +103,8 @@ public class InfoModel implements InfoContract.Model {
                             //TODO 注意这个地方：
                             Gson gson = new Gson();
                             Type[] genericInterfaces = callback.getClass().getGenericInterfaces();
-                            Type[] actualTypeArguments=null;
-                            for (int i = 0; i < genericInterfaces.length; i++) {
-                                if(genericInterfaces[i] instanceof ParameterizedType){
-                                    actualTypeArguments = ((ParameterizedType) genericInterfaces[i]).getActualTypeArguments();
-                                }
-                            }
-                            Type types =  actualTypeArguments[0];
+                            Type[] actualTypeArguments = ((ParameterizedType) genericInterfaces[0]).getActualTypeArguments();
+                            Type types = actualTypeArguments[0];
                             Object o = gson.fromJson(string, types);
                             callback.success(o);
                         } catch (IOException e) {

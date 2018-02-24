@@ -146,10 +146,10 @@ public class HomeActivity extends BaseActivity implements InfoContract.View, Rad
                 fragmentTransaction.replace(R.id.home_container, homeFragment);
                 break;
             case R.id.radio_two:
-                if (personalFragment == null) {
-                    personalFragment = new PersonalFragment(HomeActivity.this);
+                if (featuresFragment == null) {
+                    featuresFragment = new FeaturesFragment(HomeActivity.this);
                 }
-                fragmentTransaction.replace(R.id.home_container, personalFragment);
+                fragmentTransaction.replace(R.id.home_container, featuresFragment);
                 break;
             case R.id.radio_four:
                 if (orderFragment == null) {
@@ -158,10 +158,10 @@ public class HomeActivity extends BaseActivity implements InfoContract.View, Rad
                 fragmentTransaction.replace(R.id.home_container, orderFragment);
                 break;
             case R.id.radio_five:
-                if (featuresFragment == null) {
-                    featuresFragment = new FeaturesFragment(HomeActivity.this);
+                if (personalFragment == null) {
+                    personalFragment = new PersonalFragment(HomeActivity.this);
                 }
-                fragmentTransaction.replace(R.id.home_container, featuresFragment);
+                fragmentTransaction.replace(R.id.home_container, personalFragment);
                 break;
         }
         fragmentTransaction.commit();

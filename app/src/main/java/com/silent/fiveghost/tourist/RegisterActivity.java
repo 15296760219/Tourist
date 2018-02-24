@@ -5,9 +5,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
@@ -21,12 +19,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.silent.fiveghost.tourist.app.BaseActivity;
-import com.silent.fiveghost.tourist.config.Concat;
 import com.silent.fiveghost.tourist.contract.InfoContract;
 import com.silent.fiveghost.tourist.entry.RegisterBean;
 import com.silent.fiveghost.tourist.entry.SendCodeBean;
 import com.silent.fiveghost.tourist.presenter.InfoPresenter;
-import com.silent.fiveghost.tourist.utils.Regular;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -149,6 +145,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     }
 
                 });
+                //http://120.79.137.110:81/api/v1/sms/send
                 infoPresenter.getData("http://120.79.137.110:81/api/v1/sms/send", map);
                 //  request("http://120.79.137.110:81/api/v1/sms/send", map, buOne);
                 break;
