@@ -341,13 +341,13 @@
                     android:src="@mipmap/btn_rightarrow"/>
             </com.zhy.autolayout.AutoLinearLayout>
 
-            <ListView
+            <com.silent.fiveghost.tourist.widget.TouristListView
                 android:id="@+id/list_Guidestyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="35px">
 
-            </ListView>
+            </com.silent.fiveghost.tourist.widget.TouristListView>
 
         </com.zhy.autolayout.AutoLinearLayout>
     </com.silent.fiveghost.tourist.customview.ObservableScrollView>

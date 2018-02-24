@@ -14,7 +14,6 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.PartMap;
-import retrofit2.http.Path;
 import retrofit2.http.Url;
 
 /**
@@ -22,13 +21,13 @@ import retrofit2.http.Url;
  * @version 2017/12/25
  */
 
-public interface RetrofitApi {
+public interface RetrofitApi{
     @GET
     Observable<ResponseBody> doGet(@Url String url);
 
     @FormUrlEncoded
-    @POST("{path}")
-    Observable<ResponseBody> doPost(@Path("path") String path, @FieldMap Map<String, String> mMap);
+    @POST
+    Observable<ResponseBody> doPost(@Url String url, @FieldMap Map<String, String> mMap);
 
     /**
      *
