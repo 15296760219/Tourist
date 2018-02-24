@@ -138,6 +138,10 @@
         <activity android:name=".ui.activity.OrderContentActivity">
         </activity>
         <activity android:name=".ui.activity.SearchActivity"/>
+        <activity android:name=".ui.activity.OrderdetailsActivity">
+        </activity>
+        <activity android:name=".ui.activity.ReleaseActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -36,7 +36,7 @@
                         android:layout_width="56px"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="34px"
-                        android:src="@drawable/isme_back_left" />
+                        android:src="@drawable/isme_back_left"/>
 
                     <ImageView
                         android:layout_width="56px"
@@ -62,17 +62,21 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200px"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="15px"
-
+                    android:background="#000"
+                    android:paddingBottom="10px"
                     android:paddingLeft="33px">
 
                     <TextView
                         android:id="@+id/title_route"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="大理古城小团三日游"/>
+                        android:text="大理古城小团三日游"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -87,6 +91,7 @@
                             android:background="#f00"/>
 
                         <TextView
+                            style="@style/item_features_small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20px"
@@ -106,6 +111,7 @@
                             android:background="#f00"/>
 
                         <TextView
+                            style="@style/item_features_small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20px"
@@ -113,36 +119,38 @@
                     </LinearLayout>
 
                     <Button
-                        android:layout_width="150px"
-                        android:layout_height="58px"
-                        android:layout_alignParentBottom="true"
+                        style="@style/TextSmallTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_marginBottom="28px"
                         android:layout_marginRight="40px"
+                        android:layout_marginTop="105px"
                         android:background="#10c094"
-                        style="@style/text_balck_big"
-                        android:text="立即咨询"/>
+                        android:padding="10px"
+                        android:text="立即咨询"
+                        android:textColor="#000000"/>
+
                 </RelativeLayout>
 
             </RelativeLayout>
 
             <TextView
+                style="@style/text_balck_big"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="44px"
                 android:layout_marginTop="46px"
-                style="@style/text_balck_big"
                 android:text="线路详情"/>
 
-            <TextView
+            <com.silent.fiveghost.tourist.customview.FolderTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="42px"
                 android:layout_marginRight="52px"
                 android:layout_marginTop="16px"
-                android:maxLength="24"
-                android:maxLines="4"
-                android:text="风景如画的石林，世外桃源的大理，古香古韵的丽江，感受云南大理的古朴自然，一同欣赏西南风景石林和蝴蝶泉，品味各个民族的文化特色，不妨带上亲朋好友一起步入彩云之南的旅程。。。"/>
+                android:ellipsize="end"
+                android:text="风景如画的石林，世外桃源的大理，古香古韵的丽江，感受云南大理的古朴自然，一同欣赏西南风景石林和蝴蝶泉，品味各个民族的文化特色，不妨带上亲朋好友一起步入彩云之南的旅程，感受彩云之南的文化风情，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"/>
 
             <View
                 android:layout_width="match_parent"
@@ -176,15 +184,21 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="27px"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingBottom="35px"
+                    android:paddingTop="27px">
 
                     <TextView
-                        android:layout_width="199px"
-                        android:layout_height="64px"
+                        style="@style/text_balck_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="42px"
                         android:background="#00c995"
                         android:gravity="center"
+                        android:paddingBottom="20px"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px"
+                        android:paddingTop="20px"
                         android:text="2018.3.04"/>
 
                     <View
@@ -196,23 +210,26 @@
                         android:background="#000000"/>
 
                     <TextView
-                        android:layout_width="199px"
-                        android:layout_height="64px"
-                        android:layout_marginBottom="34px"
+                        style="@style/text_balck_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:background="#ffffff"
                         android:gravity="center"
-                        style="@style/text_balck_big"
+                        android:paddingBottom="20px"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px"
+                        android:paddingTop="20px"
                         android:text="结束时间"/>
 
                 </LinearLayout>
 
                 <android.support.v7.widget.CardView
-                    android:layout_width="685px"
-                    android:layout_height="495px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="41px"
                     android:layout_marginRight="50px"
-                    android:paddingLeft="26px"
-                    android:paddingRight="26px"
+                    android:paddingLeft="11px"
+                    android:paddingRight="11px"
                     app:cardCornerRadius="7px"
                     app:cardElevation="10px">
 
@@ -223,10 +240,10 @@
                         android:layout_marginRight="28px"
                         android:orientation="vertical">
 
+                        <!--共计总价-->
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="125px"
-                            android:paddingBottom="26px"
+                            android:layout_height="wrap_content"
                             android:paddingTop="30px">
 
                             <LinearLayout
@@ -243,17 +260,18 @@
 
                                 <TextView
                                     android:id="@+id/number_item_order_content2"
+                                    style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    style="@style/text_balck_big"
                                     android:text="3"/>
 
                             </LinearLayout>
 
                             <View
                                 android:layout_width="4px"
-                                android:layout_height="60px"
-                                android:background="#dadada"/>
+                                android:layout_height="match_parent"
+                                android:background="#dadada"
+                                android:gravity="center"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -269,43 +287,47 @@
 
                                 <TextView
                                     android:id="@+id/price_item_order_content3"
+                                    style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    style="@style/text_balck_big"
                                     android:text="3"/>
 
                             </LinearLayout>
 
                         </LinearLayout>
 
+                        <!--成人-->
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px">
 
                             <ImageView
                                 android:layout_width="35px"
                                 android:layout_height="35px"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15px"
+                                android:src="@mipmap/ic_launcher"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="70px"
+                                android:layout_marginLeft="83px"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:id="@+id/adultprice_item_order_content1"
+                                    style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    style="@style/text_balck_big"
                                     android:text="2000"/>
 
                                 <TextView
+                                    style="@style/text_dark_center"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    style="@style/text_dark_center"
                                     android:text="成人票/人"/>
 
                             </LinearLayout>
@@ -320,58 +342,69 @@
 
                                 <ImageView
                                     android:id="@+id/reduction1_item_order_content3"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
 
                                 <TextView
-                                    android:text="3"
-                                    style="@style/text_balck_big"
                                     android:id="@+id/adultnum_item_order_content3"
+                                    style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="3"/>
 
                                 <ImageView
                                     android:id="@+id/add_item_order_content1"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
 
                             </LinearLayout>
 
                         </RelativeLayout>
 
                         <View
-                            android:layout_width="630px"
+                            android:layout_width="match_parent"
                             android:layout_height="5px"
+                            android:layout_marginTop="26px"
                             android:background="#edcf12"/>
 
+                        <!--儿童-->
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35px">
 
                             <ImageView
                                 android:layout_width="35px"
                                 android:layout_height="35px"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15px"
+                                android:src="@mipmap/ic_launcher"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="70px"
+                                android:layout_marginLeft="83px"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
                                 <TextView
-                                    style="@style/text_balck_big"
                                     android:id="@+id/childprice_item_order_content3"
+                                    style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="2000"/>
 
                                 <TextView
+                                    style="@style/text_dark_center"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    style="@style/text_dark_center"
                                     android:text="儿童票/人"/>
 
                             </LinearLayout>
@@ -386,51 +419,63 @@
 
                                 <ImageView
                                     android:id="@+id/reduction3_item_order_content"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
 
                                 <TextView
                                     android:id="@+id/childnum_item_order_content2"
-                                    android:layout_width="wrap_content"
                                     style="@style/text_balck_big"
-                                    android:text="3"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="3"/>
 
                                 <ImageView
                                     android:id="@+id/add5_item_order_content"
-                                    android:layout_width="35px"
-                                    android:layout_height="35px"/>
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_weight="1"
+                                    android:src="@mipmap/ic_launcher"/>
 
                             </LinearLayout>
 
                         </RelativeLayout>
 
                         <View
-                            android:layout_width="630px"
+                            android:layout_width="match_parent"
                             android:layout_height="5px"
+                            android:layout_marginTop="26px"
                             android:background="#e7e7e7"/>
 
+                        <!--团体-->
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120px">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="34px"
+                            android:layout_marginTop="30px">
 
                             <ImageView
                                 android:layout_width="35px"
                                 android:layout_height="35px"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15px"
+                                android:src="@mipmap/ic_launcher"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="70px"
+                                android:layout_marginLeft="83px"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:id="@+id/teamprice_item_order_content2"
+                                    style="@style/text_balck_big"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    style="@style/text_balck_big"
                                     android:text="2000"/>
 
                                 <LinearLayout
@@ -438,16 +483,17 @@
                                     android:layout_height="wrap_content">
 
                                     <TextView
+                                        style="@style/text_dark_center"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        style="@style/text_dark_center"
                                         android:text="团体票/人"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="15px"
-                                        android:text="(10人以上可团)"/>
+                                        android:text="(10人以上可团)"
+                                        android:textColor="#ff0000"/>
 
                                 </LinearLayout>
 
@@ -467,96 +513,129 @@
 
                 </android.support.v7.widget.CardView>
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="46px"
-                    android:layout_marginRight="552px"
-                    android:layout_marginTop="48px"
-                    android:maxLines="1"
-                    android:text="已报名（13）"/>
+                    android:layout_marginTop="48px">
+
+                    <TextView
+                        style="@style/text_balck_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已报名"/>
+
+                    <TextView
+                        style="@style/text_balck_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="（13）"/>
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="26px"
                     android:layout_marginBottom="35px"
-                    android:layout_marginLeft="44px"
+                    android:layout_marginTop="26px"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="89px"
                         android:layout_height="89px"
-                        android:layout_marginRight="28px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_weight="1"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <ImageView
                         android:layout_width="89px"
                         android:layout_height="89px"
-                        android:layout_marginRight="28px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_weight="1"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <ImageView
                         android:layout_width="89px"
                         android:layout_height="89px"
-                        android:layout_marginRight="28px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_weight="1"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <ImageView
                         android:layout_width="89px"
                         android:layout_height="89px"
-                        android:layout_marginRight="28px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_weight="1"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <ImageView
                         android:layout_width="89px"
                         android:layout_height="89px"
-                        android:layout_marginRight="28px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_weight="1"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <ImageView
                         android:layout_width="89px"
                         android:layout_height="89px"
-                        android:layout_marginRight="36px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_weight="1"
                         android:src="@mipmap/ic_launcher_round"/>
 
                 </LinearLayout>
 
                 <View
-                    android:background="#dfe2e4"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_marginLeft="27px"
-                    android:layout_marginRight="32px"/>
+                    android:layout_marginRight="32px"
+                    android:background="#dfe2e4"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="15px"
                     android:layout_marginTop="44px"
-                    android:layout_marginBottom="50px"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="80px"
                         android:layout_height="80px"
-                        android:layout_marginLeft="41px"
-                        android:layout_marginRight="20px"
+                        android:layout_weight="1"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <ImageView
                         android:layout_width="80px"
                         android:layout_height="80px"
-                        android:layout_marginRight="20px"
+                        android:layout_weight="1"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
                         android:src="@mipmap/ic_launcher_round"/>
 
                     <Button
                         android:id="@+id/sign_route"
-                        android:layout_width="473px"
-                        android:layout_height="80px"
+                        android:layout_width="00px"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="38px"
+                        android:layout_weight="5"
                         android:background="#000000"
-                        android:textColor="#ffffff"
-                        android:text="立即报名"/>
+                        android:paddingBottom="27px"
+                        android:paddingLeft="15px"
+                        android:paddingRight="10px"
+                        android:paddingTop="24px"
+                        android:text="立即报名"
+                        android:textColor="#ffffff"/>
                 </LinearLayout>
 
 

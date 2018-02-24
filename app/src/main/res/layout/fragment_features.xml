@@ -5,7 +5,7 @@
                                      android:orientation="vertical">
 
     <include
-        layout="@layout/home_searchbar"
+        layout="@layout/searchbar_black"
         android:layout_width="match_parent"
         android:layout_height="120px"></include>
 
