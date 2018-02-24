@@ -20,7 +20,10 @@
     <include
         layout="@layout/home_searchbar"
         android:layout_width="match_parent"
-        android:layout_height="120px"></include>
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></include>
 
     <LinearLayout
         android:layout_width="690px"
@@ -61,11 +64,14 @@
 
                 <com.zhy.autolayout.AutoLinearLayout
                     android:layout_width="0px"
-                    android:layout_height="80px"
+                    android:layout_height="90px"
                     android:layout_gravity="center"
                     android:layout_weight="4"
                     android:orientation="vertical"
-                    android:paddingLeft="43px">
+                    android:paddingLeft="43px"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
@@ -76,9 +82,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="7px"
+                        android:layout_marginTop="0px"
                         android:gravity="left"
                         android:maxLines="1"
+                        android:layout_marginBottom="0px"
                         android:text="the new schedule of trip"/>
                 </com.zhy.autolayout.AutoLinearLayout>
 
@@ -122,10 +129,12 @@
 
                 <com.zhy.autolayout.AutoLinearLayout
                     android:layout_width="0px"
-                    android:layout_height="80px"
+                    android:layout_height="90px"
                     android:layout_gravity="center"
                     android:layout_weight="4"
                     android:orientation="vertical"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
                     android:paddingLeft="43px">
 
                     <TextView
@@ -138,10 +147,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="7px"
+                        android:layout_marginTop="0px"
                         android:layout_weight="1"
                         android:gravity="left"
                         android:maxLines="1"
+                        android:layout_marginBottom="0px"
                         android:text="the signed schedule of trip"/>
                 </com.zhy.autolayout.AutoLinearLayout>
 
@@ -185,10 +195,12 @@
 
                 <com.zhy.autolayout.AutoLinearLayout
                     android:layout_width="0px"
-                    android:layout_height="80px"
+                    android:layout_height="90px"
                     android:layout_gravity="center"
                     android:layout_weight="4"
                     android:orientation="vertical"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
                     android:paddingLeft="43px">
 
                     <TextView
@@ -201,11 +213,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="7px"
+                        android:layout_marginTop="0px"
                         android:layout_weight="1"
                         android:gravity="left"
                         android:maxLines="1"
-                        android:text="the lightning orders of trip"/>
+                        android:text="the lightning orders of trip"
+                        android:layout_marginBottom="0px"/>
                 </com.zhy.autolayout.AutoLinearLayout>
 
                 <ImageView
@@ -242,17 +255,20 @@
 
                 <View
                     android:layout_width="5px"
-                    android:layout_height="match_parent"
+                    android:layout_height="80px"
                     android:layout_gravity="center"
                     android:background="#f0f0f3"/>
 
                 <com.zhy.autolayout.AutoLinearLayout
                     android:layout_width="0px"
-                    android:layout_height="80px"
+                    android:layout_height="90px"
                     android:layout_gravity="center"
                     android:layout_weight="4"
                     android:orientation="vertical"
-                    android:paddingLeft="43px">
+                    android:paddingLeft="43px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="30px"
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
@@ -264,11 +280,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="7px"
+                        android:layout_marginTop="0px"
                         android:layout_weight="1"
                         android:gravity="left"
                         android:maxLines="1"
-                        android:text="my schedule of trip"/>
+                        android:text="my schedule of trip"
+                        android:layout_marginBottom="0px"/>
                 </com.zhy.autolayout.AutoLinearLayout>
 
                 <ImageView

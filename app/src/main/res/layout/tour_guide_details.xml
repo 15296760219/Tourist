@@ -89,7 +89,6 @@
     android:layout_marginBottom="35px"
     android:src="@mipmap/ic_launcher_round"
     />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -185,7 +184,7 @@
             android:layout_marginRight="35px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5555"
+            android:text="带团偏好AABBCC"
             />
         <TextView
             android:paddingTop="23px"
@@ -196,7 +195,7 @@
             android:layout_marginRight="24px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5555"
+            android:text="带团偏"
             />
         <TextView
             android:paddingTop="23px"
@@ -207,7 +206,7 @@
             android:layout_marginLeft="24px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5555"
+            android:text="带团偏好B"
             />
     </LinearLayout>
     <LinearLayout
@@ -224,7 +223,7 @@
             android:paddingRight="31px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5555"
+            android:text="带团偏好AABCABBCA"
             />
         <TextView
             android:layout_marginLeft="24px"
@@ -234,7 +233,7 @@
             android:paddingRight="31px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="55555666666"
+            android:text="带团偏好AABC"
             />
     </LinearLayout>
     <LinearLayout
@@ -272,7 +271,10 @@
         android:layout_marginLeft="40px"
         android:layout_width="659px"
         android:layout_height="wrap_content"
-        android:text="889"/>
+        android:maxLines="3"
+        android:lines="3"
+        android:text="导游擅长路介绍，导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍
+        导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍导游擅长路介绍。。。。"/>
     <TextView
         android:layout_marginTop="49px"
         android:layout_marginLeft="37px"
