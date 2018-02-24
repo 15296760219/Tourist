@@ -64,7 +64,7 @@
            android:gravity="center"
            android:hint="注册所以手机号"
            android:textSize="10sp"
-           android:textColor="#fff" />
+           />
 
 
        <TextView
@@ -88,7 +88,7 @@
            android:background="@drawable/list_insert2x"
            android:gravity="center"
            android:hint="请输入新密码"
-           android:textColor="#fff" />
+           />
 
        <TextView
            android:layout_width="match_parent"
@@ -101,7 +101,7 @@
 
        <EditText
            android:singleLine="true"
-           android:imeOptions="actionDone"
+           android:imeOptions="actionGo"
            android:textSize="10sp"
            android:hint="请输入验证码"
            android:id="@+id/ed_forget_confirmpassword"
@@ -111,7 +111,7 @@
            android:layout_marginTop="13px"
            android:background="@drawable/list_insert2x"
            android:gravity="center"
-           android:textColor="#fff" />
+           />
 
        <Button
            android:id="@+id/bu_forget_getcode"

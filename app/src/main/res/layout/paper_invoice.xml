@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:layout_marginTop="50px">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:text="企业抬头"
+                        android:textColor="#64DAB4" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:text="个人/非企业单位" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="发票抬头"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="填写发票抬头"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="税号"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="填写纳税人识别号"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="发票内容"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="客运服务费"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="发票金额"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="请输入金额"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="更多信息"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="购买方,备注,收款人等"
+                    android:layout_width="wrap_content"
+                    android:drawablePadding="60px"
+                    android:drawableRight="@mipmap/ic_launcher"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="75px"
+                android:layout_marginBottom="40px"
+                android:background="#E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></LinearLayout>
+
+<TextView
+    android:layout_marginLeft="60px"
+    android:text="收件信息"
+    android:layout_marginBottom="30px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="发票抬头"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="填写收件人"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30px"
+
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="联系电话"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:text="185-0430-0568"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="105px">
+
+<Spinner
+    android:layout_marginLeft="30px"
+    android:layout_weight="1"
+    android:layout_width="0px"
+    android:layout_height="105px"></Spinner>
+                <Spinner
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="105px"></Spinner>
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_marginRight="30px"
+
+                    android:layout_height="105px"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="详细地址"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="填写详细地址"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                >
+                <TextView
+                    android:layout_width="200px"
+                    android:text="电子邮件"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+
+                    android:hint="用于向你发送的电子行程单"
+                    android:layout_width="490px"
+                    android:background="#F6F6F6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="25px"
+                android:background="#E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></LinearLayout>
+
+
+            <TextView
+                android:text="开票金额不足200元,需另付邮费"
+                android:layout_width="match_parent"
+                android:layout_marginRight="155px"
+                android:layout_marginLeft="155px"
+                android:textColor="#DA1737"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_marginTop="65px"
+                android:gravity="center"
+                android:layout_marginBottom="95px"
+                android:layout_width="match_parent"
+                android:layout_height="120px">
+                <ImageView
+                    android:layout_width="88px"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_height="120px" />
+
+                <ImageView
+                    android:layout_marginLeft="132px"
+                    android:layout_marginRight="132px"
+                    android:layout_width="88px"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_height="120px" />
+                <ImageView
+                    android:layout_width="88px"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_height="120px" />
+
+            </LinearLayout>
+
+            <Button
+                android:background="#00C997"
+                android:text="确定开取"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="130px" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

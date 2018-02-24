@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a3238"
+        android:paddingBottom="56px"
+        android:paddingTop="56px">
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="34px"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/icon_back_click2x" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="一战式行程"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48px"
+                android:layout_marginLeft="34px"
+                android:layout_marginTop="38px"
+                android:text="发布行程" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="游玩人数" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_marginRight="32px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="  年龄段  " />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="出行日期" />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="返回日期" />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="行程偏好" />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_marginRight="32px"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="1px"
+                android:layout_marginTop="40px"
+                android:background="#5c5959"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+
+                android:layout_marginLeft="38px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="自然风景" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#5c5959"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="38px"
+                android:layout_marginRight="31px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="历史古迹" />
+
+                <ImageView
+                    android:layout_width="32px"
+                    android:layout_height="35px"
+                    android:layout_marginRight="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="38px"
+                android:layout_marginRight="31px"
+                android:background="#5c5959"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+                android:layout_marginLeft="38px"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="观光摄像" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="38px"
+                android:layout_marginRight="31px"
+                android:background="#5c5959"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="38px"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="美食" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="27px"
+                android:background="#5c5959"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="游玩地点分站选择" />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="35px"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:paddingBottom="37px"
+                android:paddingTop="37px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="自选导游" />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32px"
+                    android:background="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_marginTop="35px"
+                android:background="#00c996"
+                android:gravity="center"
+                android:text="发布行程"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

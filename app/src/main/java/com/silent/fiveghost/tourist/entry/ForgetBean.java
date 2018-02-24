@@ -1,11 +1,12 @@
 package com.silent.fiveghost.tourist.entry;
 
 /**
- * Created by dell on 2018/2/3.
+ * Created by dell on 2018/2/23.
  */
 
-public class RegisterBean {
 
+
+public class ForgetBean {
 
     /**
      * errcode : 1

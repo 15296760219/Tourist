@@ -4,6 +4,7 @@ import android.content.Context;
 
 
 import com.silent.fiveghost.tourist.db.product.IOpenHelper;
+import com.umeng.message.util.HttpRequest;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
