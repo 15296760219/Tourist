@@ -38,6 +38,7 @@ public class InfoPresenter implements InfoContract.Presenter{
 
     @Override
     public void upFile(Uri fileUri) {
+
         mModel.uploadFile(fileUri,view);
 
     }
