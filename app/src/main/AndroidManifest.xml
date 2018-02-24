@@ -133,10 +133,12 @@
             android:value="1334" />
 
         <activity android:name=".UserserviceprotocolActivity" />
-        <activity android:name=".ui.activity.RouteActivity"></activity>
-        <activity android:name=".ui.activity.OrderContentActivity"></activity>
+        <activity android:name=".ui.activity.RouteActivity" />
+        <activity android:name=".ui.activity.OrderContentActivity" />
         <activity android:name=".ui.activity.SearchActivity" />
-        <activity android:name=".ui.activity.ReleaseActivity"/>
+        <activity android:name=".ui.activity.ReleaseActivity" />
+        <activity android:name=".ui.activity.OrderFormActivity" />
+        <activity android:name=".ui.activity.LineItemActivity"></activity>
     </application>
 
 </manifest>
