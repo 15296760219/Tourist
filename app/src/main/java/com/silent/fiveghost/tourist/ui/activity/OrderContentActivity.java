@@ -52,6 +52,7 @@ public class OrderContentActivity extends BaseActivity implements View.OnClickLi
                 finish();
                 break;
             case R.id.submit_order_content:
+                startActivity(OrderdetailsActivity.class);
                 break;
         }
     }

@@ -43,7 +43,7 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
     private RelativeLayout news_options_features;
     private ListView lv_features;
     private ImageView city_options_features;
-    private TextView search_black_Text;
+    private TextView home_Search_Text;
 
     public FeaturesFragment(HomeActivity homeActivity) {
     }
@@ -55,8 +55,8 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
 
     @Override
     protected void initView() {
-        search_black_Text = findViewById(R.id.search_black_Text);
-        search_black_Text.setOnClickListener(this);
+        home_Search_Text = findViewById(R.id.home_Search_Text);
+        home_Search_Text.setOnClickListener(this);
 
         sales_options_features = (LinearLayout) findViewById(R.id.sales_options_features);
         text_sales = (TextView) findViewById(R.id.text_sales);
@@ -104,7 +104,7 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.search_black_Text:
+            case R.id.home_Search_Text:
                 readyGo(SearchActivity.class);
                 break;
             case R.id.sales_options_features:

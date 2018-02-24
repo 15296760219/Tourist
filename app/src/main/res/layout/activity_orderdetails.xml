@@ -1,10 +1,413 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<com.zhy.autolayout.AutoLinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#f0f0f0"
     android:layout_height="match_parent"
     tools:context="com.silent.fiveghost.tourist.ui.activity.OrderdetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="910px"
+                android:background="#181f28"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175px"
+                    android:background="#2b3339">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="42px"
+                        android:src="@drawable/item_left"/>
+
+                    <TextView
+                        style="@style/text_balck_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="大理古城三日游"
+                        android:textColor="#ffffff"/>
+                </RelativeLayout>
+
+                <com.silent.fiveghost.tourist.customview.OrderProgress
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"/>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="40px"
+                    app:cardCornerRadius="7px"
+                    app:cardElevation="10px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/text_balck_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33px"
+                            android:gravity="center"
+                            android:text="出行信息"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginRight="50px"
+                            android:layout_marginTop="34px">
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/corners_lefttop"
+                                android:gravity="center"
+                                android:text="出发时间"/>
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="@drawable/corners_righttop"
+                                android:gravity="center"
+                                android:text="出发时间"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginRight="50px">
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/corners_leftbottom"
+                                android:gravity="center"
+                                android:text="出发时间"/>
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="@drawable/corners_rightbottom"
+                                android:gravity="center"
+                                android:text="出发时间"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginRight="50px"
+                            android:layout_marginTop="40px">
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/corners_left"
+                                android:gravity="center"
+                                android:text="金额"/>
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="@drawable/corners_right"
+                                android:gravity="center"
+                                android:text="￥3000"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="47px"
+                            android:layout_marginLeft="53px"
+                            android:layout_marginRight="53px"
+                            android:layout_marginTop="40px">
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_gray_et"
+                                android:gravity="center"
+                                android:paddingBottom="25px"
+                                android:paddingTop="25px"
+                                android:text="成人：2"/>
+
+                            <TextView
+                                style="@style/text_balck_big"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50px"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_gray_et"
+                                android:gravity="center"
+                                android:paddingBottom="25px"
+                                android:paddingTop="25px"
+                                android:text="儿童：2"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="40px"
+                    app:cardCornerRadius="7px"
+                    app:cardElevation="10px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/text_balck_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33px"
+                            android:gravity="center"
+                            android:text="联系人信息"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="42px"
+                            android:text="联系人姓名"/>
+
+                        <TextView
+                            style="@style/text_balck_big"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="12px"
+                            android:text="张鹏 Zhang Peng"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="45px">
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="联系人电话"/>
+
+                                <TextView
+                                    style="@style/text_balck_big"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12px"
+                                    android:text="1356 6709 842"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="订单号码"/>
+
+                                <TextView
+                                    style="@style/text_balck_big"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12px"
+                                    android:text="2017110234567"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:layout_marginTop="57px"
+                            android:background="#e8e8e8"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="33px"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="35px"
+                            android:text="2017-12-18 12:00:00"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="40px"
+                    android:paddingLeft="95px"
+                    app:cardCornerRadius="7px"
+                    app:cardElevation="10px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/text_balck_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33px"
+                            android:gravity="center"
+                            android:text="联系人信息"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="42px"
+                            android:text="联系人姓名"/>
+
+                        <TextView
+                            style="@style/text_balck_big"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="12px"
+                            android:text="张鹏 Zhang Peng"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="53px"
+                            android:layout_marginLeft="95px"
+                            android:layout_marginTop="45px">
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="联系人电话"/>
+
+                                <TextView
+                                    style="@style/text_balck_big"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12px"
+                                    android:text="1356 6709 842"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="订单号码"/>
+
+                                <TextView
+                                    style="@style/text_balck_big"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12px"
+                                    android:text="2017110234567"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="45px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:layout_marginTop="45px">
+
+                    <Button
+                        style="@style/text_balck_big"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_red"
+                        android:text="取消订单"/>
+
+                    <Button
+                        style="@style/text_balck_big"
+                        android:layout_width="0px"
+                        android:layout_marginLeft="32px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_black"
+                        android:text="修改订单"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>
