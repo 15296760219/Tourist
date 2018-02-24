@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="268px"
-              android:paddingBottom="14px"
-              android:paddingLeft="42px"
-              android:paddingRight="42px"
-              android:paddingTop="14px">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="268px"
+    android:paddingBottom="14px"
+    android:paddingLeft="42px"
+    android:paddingRight="42px"
+    android:paddingTop="14px">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -17,44 +17,45 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="20px"
-            android:paddingLeft="21px"
-            android:paddingRight="33px"
-            android:paddingTop="20px">
+            android:orientation="horizontal">
 
             <ImageView
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="22px"
+                android:layout_marginTop="22px"
                 android:layout_width="200px"
                 android:layout_height="200px"
-                android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/ic_launcher" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="22px"
-                android:paddingRight="12px"
-                android:paddingTop="10px">
+                android:layout_marginTop="33px">
 
                 <TextView
                     android:id="@+id/name_item_home"
                     style="@style/text_balck_big"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="导游A"/>
+                    android:text="导游A" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name_item_home"
                     android:layout_marginTop="22px"
-                    android:text="擅长路线 :  呵呵哒"/>
+                    android:text="擅长路线 :  呵呵哒" />
 
-                <RatingBar
+                <com.silent.fiveghost.tourist.customview.RatingBar
                     android:layout_width="165px"
                     android:layout_height="25px"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
-                    android:numStars="5"/>
+                    app:clickable="false"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/pic_star_grey2x"
+                    app:starFill="@drawable/pic_star_yellow2x" />
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>

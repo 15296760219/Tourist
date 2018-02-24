@@ -15,7 +15,8 @@ import java.util.Map;
  * Created by Nyh on 2018/1/13.
  */
 
-public class InfoPresenter implements InfoContract.Presenter {
+public class InfoPresenter implements InfoContract.Presenter{
+
     private InfoContract.View view;
     private InfoModel mModel;
 

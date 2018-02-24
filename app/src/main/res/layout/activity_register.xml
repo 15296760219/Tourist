@@ -36,7 +36,7 @@
             android:layout_height="20dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="37px"
-            android:background="@drawable/icon_more2x" />
+            />
 
     </LinearLayout>
 
@@ -146,7 +146,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/list_insert2x"
         android:gravity="center"
-        android:imeOptions="actionDone"
+        android:imeOptions="actionGo"
         android:singleLine="true"
         android:textColor="#fff"
      />

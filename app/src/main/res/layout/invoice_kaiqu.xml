@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a3238"
+        android:paddingBottom="56px"
+        android:paddingTop="56px">
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="34px"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/icon_back_click2x" />
+
+        <TextView
+            android:layout_marginLeft="233px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发票开取"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:text="电子发票"
+            android:background="#181f28"
+            android:textColor="#00c794"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"></LinearLayout>
+        <Button
+            android:background="#181f28"
+            android:text="纸质发票"
+            android:layout_weight="1"
+            android:textColor="#00c794"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

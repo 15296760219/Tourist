@@ -3,7 +3,7 @@ package com.silent.fiveghost.tourist.db.factor;
 import android.content.Context;
 
 import com.silent.fiveghost.tourist.db.product.IOpenHelper;
-import com.silent.fiveghost.tourist.http.products.HttpRequest;
+import com.umeng.message.util.HttpRequest;
 
 /**
  * @author 农民伯伯

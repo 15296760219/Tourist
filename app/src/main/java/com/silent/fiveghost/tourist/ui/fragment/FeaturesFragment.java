@@ -17,6 +17,7 @@ import com.silent.fiveghost.tourist.adapter.FeaturesLvAdapter;
 import com.silent.fiveghost.tourist.app.base.BaseFragment;
 import com.silent.fiveghost.tourist.ui.activity.HomeActivity;
 import com.silent.fiveghost.tourist.ui.activity.RouteActivity;
+import com.silent.fiveghost.tourist.ui.activity.SearchActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +43,7 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
     private RelativeLayout news_options_features;
     private ListView lv_features;
     private ImageView city_options_features;
+    private TextView search_black_Text;
 
     public FeaturesFragment(HomeActivity homeActivity) {
     }
@@ -53,6 +55,9 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
 
     @Override
     protected void initView() {
+        search_black_Text = findViewById(R.id.search_black_Text);
+        search_black_Text.setOnClickListener(this);
+
         sales_options_features = (LinearLayout) findViewById(R.id.sales_options_features);
         text_sales = (TextView) findViewById(R.id.text_sales);
         img_sales = (ImageView) findViewById(R.id.img_sales);
@@ -99,6 +104,9 @@ public class FeaturesFragment extends BaseFragment implements View.OnClickListen
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+            case R.id.search_black_Text:
+                readyGo(SearchActivity.class);
+                break;
             case R.id.sales_options_features:
                 text_sales.setTextAppearance(getActivity(),R.style.options_features_green);
                 img_sales.setVisibility(View.VISIBLE);

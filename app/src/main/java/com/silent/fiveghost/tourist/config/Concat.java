@@ -13,6 +13,7 @@ public interface Concat {
     /**
      * RetrofitTools
      */
-    String BASE_URL="";
+    String BASE_URL="http://120.79.137.110:81/";
+    String BASE_URL2="http://120.79.137.110:80/api/v1/auth/signup/";
 
 }
