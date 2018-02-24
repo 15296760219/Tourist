@@ -6,7 +6,6 @@
     android:paddingLeft="30px"
     android:paddingRight="30px"
     android:orientation="vertical">
-
     <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
         android:layout_marginTop="35px"
@@ -99,7 +98,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15px"
                 android:text="100收藏"/>
-
         </LinearLayout>
     </RelativeLayout>
 </com.zhy.autolayout.AutoLinearLayout>

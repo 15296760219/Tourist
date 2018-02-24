@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.silent.fiveghost.tourist.R;
 import com.silent.fiveghost.tourist.app.base.BaseFragment;
 import com.silent.fiveghost.tourist.ui.activity.HomeActivity;
+import com.silent.fiveghost.tourist.ui.activity.OrderFormActivity;
 import com.zhy.autolayout.AutoLinearLayout;
 
 /**
@@ -55,16 +56,16 @@ public class OrderFragment extends BaseFragment {
     protected void setListener() {
         switch (getId()){
             case R.id.card:
-                 startActivity(new Intent());
+                 startActivity(new Intent(getActivity(),OrderFormActivity.class));
                 break;
             case R.id.card2:
-                startActivity(new Intent());
+                startActivity(new Intent(getActivity(),OrderFormActivity.class));
                 break;
             case R.id.card3:
-                startActivity(new Intent());
+                startActivity(new Intent(getActivity(),OrderFormActivity.class));
                 break;
             case R.id.card4:
-                startActivity(new Intent());
+                startActivity(new Intent(getActivity(),OrderFormActivity.class));
                 break;
         }
     }

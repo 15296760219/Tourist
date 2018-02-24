@@ -138,7 +138,6 @@
         <activity android:name=".ui.activity.SearchActivity" />
         <activity android:name=".ui.activity.ReleaseActivity" />
         <activity android:name=".ui.activity.OrderFormActivity" />
-        <activity android:name=".ui.activity.LineItemActivity"></activity>
     </application>
 
 </manifest>
